@@ -1,0 +1,73 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+}
+
+/* Header */
+header {
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'Chewy', sans-serif;
+    color:inherit;
+    background-color: #061033;
+}
+
+#logo{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+header > a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+header > a > img,h1{
+    position: absolute;
+    margin-left: 1rem;
+}
+
+
+#menu , #menu-mobile{
+    list-style-type: none;
+    color: inherit;
+    font-size: 120%;
+    display: flex;
+    padding-right: 1rem;
+    text-decoration: none;
+}
+
+#menu li{
+    padding-left: 1rem;
+}
+
+#menu-mobile li{
+    padding-left: 1rem;
+}
+
+/* footer */
+footer{
+    background-color: red;
+    z-index: 100;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    text-decoration: none;
+}
