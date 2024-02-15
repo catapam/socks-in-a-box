@@ -24,11 +24,15 @@ header {
 
 /* Style the brand */
 #brand {
-    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center; /* Vertically center the content within the brand */
+    position: absolute;
+    justify-content: left;
+    padding-left: 1rem;
+    list-style-type: none;
+    text-decoration: none; 
 }
 
 #brand li {
@@ -44,14 +48,6 @@ header {
     text-decoration: none;
     color: inherit; /* Adjust text color as needed */
     font-size: 150%;
-}
-
-#brand{
-    position: absolute;
-    justify-content: left;
-    padding-left: 1rem;
-    list-style-type: none;
-    text-decoration: none; 
 }
 
 #menu {
@@ -80,7 +76,7 @@ header {
 }
 
 #menu .active {
-    color: #ee5f00; /* Style the active menu item */
+    color: #ee5f00 !important; /* Style the active menu item */
 }
 
 /* Ensure no other styles are affecting the menu alignment */
@@ -105,6 +101,7 @@ footer {
     padding: 10px; /* Add padding for spacing */
     display: flex;
     justify-content: space-around; /* Divide the screen space evenly */
+    width: 100vw; /* Set width to 100% of the viewport width */
 }
 
 #menu-mobile {
@@ -125,6 +122,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 150%;
+    flex-grow: 1; /* Make each menu item take up all available horizontal space */
 }
 
 #menu-mobile .active {
