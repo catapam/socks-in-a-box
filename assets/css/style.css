@@ -189,5 +189,6 @@ footer {
     }
     #menu-mobile{
         display:flex;
+        position: relative;
     }
 }
