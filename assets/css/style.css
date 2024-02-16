@@ -62,9 +62,19 @@ body > nav {
 
 /* main */
 main{
-    
+    background-color: #061033;
 }
 
+#hero{
+    position: absolute;
+    background-image: url("../images/hero.webp");
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	overflow: hidden;
+    z-index: 100;
+}
 
 /* footer */
 footer{
