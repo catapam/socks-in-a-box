@@ -50,33 +50,8 @@ header {
     font-size: 150%;
 }
 
-#menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end; /* Align the menu to the right side of the screen */
-    font-size: 120%;
-    letter-spacing: 2px;
-}
-
-#menu li {
-    margin: 0;
-}
-
-#menu a {
-    text-decoration: none;
-    color: white;
-    padding: 15px 20px;
-    display: block;
-}
-
-#menu a:hover {
-    color: #20f9fc; /* Change background color on hover */
-}
-
-#menu .active {
-    color: #ee5f00 !important; /* Style the active menu item */
+#menu{
+    display:none;
 }
 
 /* Ensure no other styles are affecting the menu alignment */
@@ -92,21 +67,23 @@ main{
 
 
 /* footer */
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+footer{
+    position:absolute;
+    justify-content: space-around; /* Divide the screen space evenly */
+    width: 100vw; /* Set width to 100% of the viewport width */
     background-color: #061033 ; /* Set the background color */
     padding: 10px; /* Add padding for spacing */
     display: flex;
+    bottom: 0;
+    left: 0;
 }
 
 #menu-mobile {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: none;
+    display: flex;
+    position: relative;
 }
 
 #menu-mobile li {
@@ -178,17 +155,42 @@ footer {
 
 
 /* media queries */
-@media screen and (max-width: 576px) {
-    #menu{
-        display:none;
+@media screen and (min-width: 576px) {
+    #menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end; /* Align the menu to the right side of the screen */
+        font-size: 120%;
+        letter-spacing: 2px;
     }
-    footer{
-        position:fixed;
-        justify-content: space-around; /* Divide the screen space evenly */
-        width: 100vw; /* Set width to 100% of the viewport width */
+    
+    #menu li {
+        margin: 0;
     }
+    
+    #menu a {
+        text-decoration: none;
+        color: white;
+        padding: 15px 20px;
+        display: block;
+    }
+    
+    #menu a:hover {
+        color: #20f9fc; /* Change background color on hover */
+    }
+    
+    #menu .active {
+        color: #ee5f00 !important; /* Style the active menu item */
+    }
+
+    footer {
+        position: fixed;
+        width: 100%;
+    }
+
     #menu-mobile{
-        display:flex;
-        position: relative;
+        display:none;
     }
 }
