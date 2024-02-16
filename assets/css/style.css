@@ -125,7 +125,8 @@ footer {
 }
 
 #menu-mobile .active {
-    color: #ee5f00; /* Style the active menu item */
+    background-color: #ee5f00; /* Style the active menu item */
+    border-radius: 20%;
 }
 
 
