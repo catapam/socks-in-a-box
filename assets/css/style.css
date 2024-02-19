@@ -94,7 +94,7 @@ main{
 }
 
 #hero{
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     position:relative;
     background-image: url("../images/hero.webp");
@@ -107,7 +107,7 @@ main{
 
 /* footer */
 footer{
-    position:absolute;
+    position:fixed;
     justify-content: space-around; /* Divide the screen space evenly */
     width: 100vw; /* Set width to 100% of the viewport width */
     background-color: #061033 ; /* Set the background color */
@@ -115,7 +115,6 @@ footer{
     display: flex;
     bottom: 0;
     left: 0;
-    /* height: 10vh; */
 }
 
 #menu-mobile {
@@ -226,8 +225,7 @@ footer{
     }
 
     footer {
-        position: fixed;
-        width: 100%;
+        position: absolute;
     }
 
     #menu-mobile{
