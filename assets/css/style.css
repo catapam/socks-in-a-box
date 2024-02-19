@@ -22,6 +22,8 @@ body{
     /* Generic project styles */
     color: #061033 ;
     font-family: 'Chewy', sans-serif;
+    height:100%;
+    overflow-y:auto;
 }
 
 body > nav {
@@ -100,7 +102,8 @@ main{
 }
 
 #hero{
-    height: 90vh;
+    height: auto;
+    min-height: 90vh;
     width: 100vw;
     position:relative;
     background-image: url("../images/hero.webp");
@@ -112,11 +115,11 @@ main{
 }
 
 /* footer */
-footer{
-    position:fixed;
-    justify-content: space-around; /* Divide the screen space evenly */
+footer {
+    position: fixed;
+    justify-content: space-around; /* This is applied to the footer itself */
     width: 100vw; /* Set width to 100% of the viewport width */
-    background-color: #061033 ; /* Set the background color */
+    background-color: #061033; /* Set the background color */
     padding: 10px; /* Add padding for spacing */
     display: flex;
     bottom: 0;
@@ -128,11 +131,16 @@ footer{
     margin: 0;
     padding: 0;
     display: flex;
+    width: 100%; /* Ensure it takes the full width */
+    justify-content: space-around; /* This ensures items are evenly spread */
     position: relative;
 }
 
 #menu-mobile li {
-    margin: 0;
+    flex-grow: 1; /* This makes each list item grow and fill the footer */
+    display: flex;
+    justify-content: center; /* Center content of each li */
+    align-items: center; /* Vertically aligns the content */
 }
 
 #menu-mobile a {
@@ -143,13 +151,12 @@ footer{
     flex-direction: column;
     align-items: center;
     font-size: 180%;
-    flex-grow: 1; /* Make each menu item take up all available horizontal space */
 }
 
 #menu-mobile .active {
     background-color: #ee5f00; /* Style the active menu item */
     border-radius: 20%;
-    font-size:200%;
+    font-size: 200%;
 }
 
 /* Hover effects */
