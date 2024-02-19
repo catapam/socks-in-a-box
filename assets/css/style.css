@@ -9,12 +9,16 @@
     color:white;
 }
 
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
 /* Ensure no other styles are affecting the menu alignment */
 body{
     display:flex;
     min-height: 100vh;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* Generic project styles */
     color: #061033 ;
     font-family: 'Chewy', sans-serif;
@@ -51,6 +55,7 @@ header {
     width: 100%;
     height: 8%;
     align-items: center; 
+    visibility: hidden;
 }
 
 /* Style the brand */
@@ -89,8 +94,9 @@ header {
 main{
     background-color: #061033;
     display:flex;
-    height:100vh;
+    flex-direction: column;
     width: 100%;
+    overflow-y: auto;
 }
 
 #hero{
@@ -101,7 +107,7 @@ main{
 	background-size: cover;
 	background-position:center;
 	background-repeat: no-repeat;
-	overflow: hidden;
+	overflow: auto;
     z-index: 0;
 }
 
@@ -195,6 +201,9 @@ footer{
 
 /* media queries */
 @media screen and (min-width: 576px) {
+    header{
+        visibility: visible;
+    }
     #menu {
         list-style: none;
         margin: 0;
