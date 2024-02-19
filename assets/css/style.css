@@ -9,9 +9,41 @@
     color:white;
 }
 
+/* Ensure no other styles are affecting the menu alignment */
+body{
+    display:flex;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* Generic project styles */
+    color: #061033 ;
+    font-family: 'Chewy', sans-serif;
+}
+
+body > nav {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Chewy', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Comic Sans MS', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.hidden-heading {
+    display: none;
+}
+
 /* Header */
 header {
-    background-color: #061033;
+    /* background-color: #061033; */
     font-family: 'Chewy', sans-serif;
     color:inherit;
     position: fixed;
@@ -19,7 +51,6 @@ header {
     width: 100%;
     height: 8%;
     align-items: center; 
-    min-height: 4rem;
 }
 
 /* Style the brand */
@@ -54,26 +85,24 @@ header {
     display:none;
 }
 
-/* Ensure no other styles are affecting the menu alignment */
-body > nav {
-    width: 100%;
-    box-sizing: border-box;
-}
-
 /* main */
 main{
     background-color: #061033;
+    display:flex;
+    height:100vh;
+    width: 100%;
 }
 
 #hero{
-    position: absolute;
+    height: 100vh;
+    width: 90vw;
+    position:relative;
     background-image: url("../images/hero.webp");
 	background-size: cover;
-	background-position: top center;
-	background-attachment: fixed;
+	background-position:center;
 	background-repeat: no-repeat;
 	overflow: hidden;
-    z-index: 100;
+    z-index: 0;
 }
 
 /* footer */
@@ -86,6 +115,7 @@ footer{
     display: flex;
     bottom: 0;
     left: 0;
+    /* height: 10vh; */
 }
 
 #menu-mobile {
