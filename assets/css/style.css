@@ -24,6 +24,8 @@ body{
     font-family: 'Chewy', sans-serif;
     height:100%;
     overflow-y:auto;
+    scrollbar-width: thin;
+    scrollbar-color: #fe007b65 transparent; 
 }
 
 body > nav {
@@ -47,7 +49,7 @@ p {
 
 /* Header */
 header {
-    background-color: #061033e0;
+    background-color: #061033;
     font-family: 'Chewy', sans-serif;
     color:inherit;
     position: fixed;
