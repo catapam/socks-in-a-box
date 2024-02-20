@@ -228,15 +228,15 @@ footer {
 /* Hover effects */
 
 .grow {
-	-webkit-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 .grow:hover {
-	-webkit-transform: scale(1.03);
-	    -ms-transform: scale(1.03);
-	        transform: scale(1.03);
+	-webkit-transform: scale(1.01);
+	    -ms-transform: scale(1.01);
+	        transform: scale(1.01);
 }
 
 .shake:hover {
@@ -334,26 +334,26 @@ div.hover-shadow {
     }
 
     .diagonal-top-left:hover{
-        -webkit-transform: scale(1.03) skew(-0.5deg, -0.8deg); /* Chrome, Safari, Opera */
-            -ms-transform: scale(1.03) skew(-0.5deg, -0.8deg); /* IE 9 */
-                transform: scale(1.03) skew(-0.5deg, -0.8deg); /* Standard syntax */
+        -webkit-transform: scale(1.01) skew(-0.3deg, -0.5deg); /* Chrome, Safari, Opera */
+            -ms-transform: scale(1.01) skew(-0.3deg, -0.5deg); /* IE 9 */
+                transform: scale(1.01) skew(-0.3deg, -0.5deg); /* Standard syntax */
     }
     
     .diagonal-top-right:hover{
-        -webkit-transform: scale(1.03) skew(0.5deg, 0.8deg); /* Chrome, Safari, Opera */
-            -ms-transform: scale(1.03) skew(0.5deg, 0.8deg); /* IE 9 */
-                transform: scale(1.03) skew(0.5deg, 0.8deg); /* Standard syntax */
+        -webkit-transform: scale(1.01) skew(0.3deg, 0.5deg); /* Chrome, Safari, Opera */
+            -ms-transform: scale(1.01) skew(0.3deg, 0.5deg); /* IE 9 */
+                transform: scale(1.01) skew(0.3deg, 0.5deg); /* Standard syntax */
     }
     
     .diagonal-bottom-left:hover{
-        -webkit-transform: scale(1.03) skew(-0.5deg, 0.8deg); /* Chrome, Safari, Opera */
-            -ms-transform: scale(1.03) skew(-0.5deg, 0.8deg); /* IE 9 */
-                transform: scale(1.03) skew(-0.5deg, 0.8deg); /* Standard syntax */
+        -webkit-transform: scale(1.01) skew(-0.3deg, 0.5deg); /* Chrome, Safari, Opera */
+            -ms-transform: scale(1.01) skew(-0.3deg, 0.5deg); /* IE 9 */
+                transform: scale(1.01) skew(-0.3deg, 0.5deg); /* Standard syntax */
     }
     
     .diagonal-bottom-right:hover{
-        -webkit-transform: scale(1.03) skew(0.5deg, -0.8deg); /* Chrome, Safari, Opera */
-            -ms-transform: scale(1.03) skew(0.5deg, -0.8deg); /* IE 9 */
-                transform: scale(1.03) skew(0.5deg, -0.8deg); /* Standard syntax */
+        -webkit-transform: scale(1.01) skew(0.3deg, -0.5deg); /* Chrome, Safari, Opera */
+            -ms-transform: scale(1.01) skew(0.3deg, -0.5deg); /* IE 9 */
+                transform: scale(1.01) skew(0.3deg, -0.5deg); /* Standard syntax */
     }    
 }
