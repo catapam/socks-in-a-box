@@ -180,6 +180,10 @@ main > div{
     flex-direction: column;
 }
 
+.top-spacing{
+    padding-top: 4rem;
+}
+
 /* footer */
 footer {
     position: fixed;
