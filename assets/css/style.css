@@ -104,6 +104,11 @@ main{
     padding-top: 8%;
 }
 
+main > div{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
 #hero{
     height: auto;
     min-height: 90vh;
@@ -119,8 +124,6 @@ main{
 }
 
 .features{
-    padding-left: 15%;
-    padding-right: 15%;
     padding-top: 5%;
 }
 
@@ -266,6 +269,14 @@ footer {
     }
 }
 
+div.hover-shadow {
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+}
+
+.hover-shadow:hover{
+    box-shadow: 0 5px 15px rgba(254, 0, 121,0.5);
+}
+
 
 /* media queries */
 @media screen and (min-width: 576px) {
@@ -319,4 +330,28 @@ footer {
     .feature-card{
         width: calc(33% - 20px); /*Adjust based on the gap and number of items per row*/;
     }
+
+    .diagonal-top-left:hover{
+        -webkit-transform: scale(1.03) skew(-0.5deg, -0.8deg); /* Chrome, Safari, Opera */
+            -ms-transform: scale(1.03) skew(-0.5deg, -0.8deg); /* IE 9 */
+                transform: scale(1.03) skew(-0.5deg, -0.8deg); /* Standard syntax */
+    }
+    
+    .diagonal-top-right:hover{
+        -webkit-transform: scale(1.03) skew(0.5deg, 0.8deg); /* Chrome, Safari, Opera */
+            -ms-transform: scale(1.03) skew(0.5deg, 0.8deg); /* IE 9 */
+                transform: scale(1.03) skew(0.5deg, 0.8deg); /* Standard syntax */
+    }
+    
+    .diagonal-bottom-left:hover{
+        -webkit-transform: scale(1.03) skew(-0.5deg, 0.8deg); /* Chrome, Safari, Opera */
+            -ms-transform: scale(1.03) skew(-0.5deg, 0.8deg); /* IE 9 */
+                transform: scale(1.03) skew(-0.5deg, 0.8deg); /* Standard syntax */
+    }
+    
+    .diagonal-bottom-right:hover{
+        -webkit-transform: scale(1.03) skew(0.5deg, -0.8deg); /* Chrome, Safari, Opera */
+            -ms-transform: scale(1.03) skew(0.5deg, -0.8deg); /* IE 9 */
+                transform: scale(1.03) skew(0.5deg, -0.8deg); /* Standard syntax */
+    }    
 }
