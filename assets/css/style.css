@@ -47,7 +47,7 @@ p {
 
 /* Header */
 header {
-    background-color: #061033;
+    background-color: #061033e0;
     font-family: 'Chewy', sans-serif;
     color:inherit;
     position: fixed;
@@ -146,7 +146,7 @@ main > div{
     display: flex; /* Keeps the content aligned flexibly */
     padding: 10px;
     min-height: 15rem; /* Minimum height, but allows expansion based on flex properties */
-    background-color: #20f8fcc6;
+    background-color: #20f8fcbb;
     border-radius: 40px;
     width: 100%; /*Adjust based on the gap and number of items per row*/
     box-sizing: border-box; /* Ensures padding is included in the width calculation */
@@ -218,7 +218,7 @@ footer {
 }
 
 #menu-mobile .active {
-    background-color: #ee5f00; /* Style the active menu item */
+    background-color: #fe0079 ; /* Style the active menu item */
     border-radius: 20%;
     font-size: 200%;
 }
@@ -312,7 +312,7 @@ div.hover-shadow {
     }
     
     #menu .active {
-        color: #ee5f00 !important; /* Style the active menu item */
+        color: #fe0079 !important; /* Style the active menu item */
     }
     
     #menu-mobile{
