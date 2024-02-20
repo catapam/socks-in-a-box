@@ -37,13 +37,17 @@ h1, h2, h3, h4, h5, h6, p {
     color: white;
 }
 
+p {
+    letter-spacing: 0;
+}
+
 .hidden-heading {
     display: none;
 }
 
 /* Header */
 header {
-    /* background-color: #061033; */
+    background-color: #061033;
     font-family: 'Chewy', sans-serif;
     color:inherit;
     position: fixed;
@@ -52,6 +56,10 @@ header {
     height: 8%;
     align-items: center; 
     visibility: hidden;
+}
+
+header > nav {
+    margin-right: 30px;
 }
 
 /* Style the brand */
@@ -93,12 +101,14 @@ main{
     flex-direction: column;
     width: 100%;
     overflow-y: auto;
+    padding-top: 8%;
 }
 
 #hero{
     height: auto;
     min-height: 90vh;
     width: 100vw;
+    margin-top: -3%;
     position:relative;
     background-image: url("../images/hero.webp");
 	background-size: cover;
@@ -108,15 +118,36 @@ main{
     z-index: 0;
 }
 
+.features{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+}
+
+.title{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 2%;
+}
+
 .features-table {
-    column-count: 3;
-    max-width: 80%;
+    width: 100%;
+    padding-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Or any other alignment you prefer */
+    gap: 20px; /* Space between the cards */
 }
 
 .feature-card {
-    display: flex; /* Turns the feature card into a flex container */
-    padding: 10px; /* Optional: Adds some padding inside each feature card */
-    height: 18rem;
+    display: flex; /* Keeps the content aligned flexibly */
+    padding: 10px;
+    min-height: 15rem; /* Minimum height, but allows expansion based on flex properties */
+    background-color: #20f8fcc6;
+    border-radius: 40px;
+    width: 100%; /*Adjust based on the gap and number of items per row*/
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    min-width: 250px;
 }
 
 .feature-card i {
@@ -124,18 +155,22 @@ main{
     padding-top: 20px;
     /* Adjust font-size as needed to make the icons larger or smaller */
     font-size: 48px; /* Example size, adjust as needed */
+    color: #061033;
 }
 
-.feature-card h2{
+.feature-card h2,p{
     padding-top: 5px;
+    color: #061033;
 }
 
 .feature-card p{
-    padding-top: 5px;
+    text-align: justify;
+    padding: 10%;
+    padding-left: 0;
 }
 
 /* Ensures the text content is aligned next to the icon */
-.feature-card div {
+.feature-card > div {
     display: flex;
     flex-direction: column;
 }
@@ -234,6 +269,9 @@ footer {
 
 /* media queries */
 @media screen and (min-width: 576px) {
+    *{
+        max-width: 100%;
+    }
     header{
         visibility: visible;
     }
@@ -265,12 +303,20 @@ footer {
     #menu .active {
         color: #ee5f00 !important; /* Style the active menu item */
     }
-
-    footer {
-        position: absolute;
-    }
-
+    
     #menu-mobile{
         display:none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .feature-card{
+        width: calc(50% - 20px); /*Adjust based on the gap and number of items per row*/;
+    }
+}
+
+@media screen and (min-width: 1129px) {
+    .feature-card{
+        width: calc(33% - 20px); /*Adjust based on the gap and number of items per row*/;
     }
 }
