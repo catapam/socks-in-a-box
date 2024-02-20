@@ -31,13 +31,7 @@ body > nav {
     box-sizing: border-box;
 }
 
-h1 {
-    font-family: 'Chewy', sans-serif;
-    letter-spacing: 2px;
-    color: white;
-}
-
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     font-family: 'Comic Sans MS', sans-serif;
     letter-spacing: 2px;
     color: white;
@@ -112,6 +106,38 @@ main{
 	background-repeat: no-repeat;
 	overflow: auto;
     z-index: 0;
+}
+
+.features-table {
+    column-count: 3;
+    max-width: 80%;
+}
+
+.feature-card {
+    display: flex; /* Turns the feature card into a flex container */
+    padding: 10px; /* Optional: Adds some padding inside each feature card */
+    height: 18rem;
+}
+
+.feature-card i {
+    margin-right: 20px; /* Adds some space between the icon and the text */
+    padding-top: 20px;
+    /* Adjust font-size as needed to make the icons larger or smaller */
+    font-size: 48px; /* Example size, adjust as needed */
+}
+
+.feature-card h2{
+    padding-top: 5px;
+}
+
+.feature-card p{
+    padding-top: 5px;
+}
+
+/* Ensures the text content is aligned next to the icon */
+.feature-card div {
+    display: flex;
+    flex-direction: column;
 }
 
 /* footer */
