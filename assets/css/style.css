@@ -136,7 +136,7 @@ main > div{
     padding-left: 2%;
 }
 
-.features-table {
+.table {
     width: 100%;
     padding-top: 2%;
     display: flex;
@@ -225,6 +225,49 @@ main > div{
     width: auto; /* Maintains the aspect ratio */
     margin-right: 10%; 
     padding-left: 0; /* Remove padding-left if it's not required for other purposes */
+}
+
+/* testimonials */
+.testimonial-section {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.testimonial-section p{
+    color: white;
+}
+
+.testimonial-section > .table {
+    width:80%;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+.testimonial-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    min-height: 15rem; /* Minimum height, but allows expansion based on flex properties */
+    width: 100%; /*Adjust based on the gap and number of items per row*/
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    min-width: 150px;
+}
+
+.profile_image > img{
+    height: 90vh;
+    width: 90vw;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#right-arrow,#left-arrow {
+    width: 10%;
 }
 
 /* footer */
@@ -386,10 +429,17 @@ div.hover-shadow {
     .feature-card{
         width: calc(50% - 20px); /*Adjust based on the gap and number of items per row*/;
     }
+    .testimonial-card{
+        width: calc(50% - 20px); /*Adjust based on the gap and number of items per row*/;
+    }
 }
 
 @media screen and (min-width: 1129px) {
     .feature-card{
+        width: calc(33% - 20px); /*Adjust based on the gap and number of items per row*/;
+    }
+
+    .testimonial-card{
         width: calc(33% - 20px); /*Adjust based on the gap and number of items per row*/;
     }
 
