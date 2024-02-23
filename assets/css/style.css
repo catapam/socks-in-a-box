@@ -22,6 +22,7 @@ body{
     /* Generic project styles */
     color: #061033 ;
     font-family: 'Chewy', sans-serif;
+    font-size: 85%;
     height:100%;
     overflow-y:auto;
     scrollbar-width: thin;
@@ -169,7 +170,7 @@ main > div{
 }
 
 .feature-card p{
-    text-align: justify;
+    /* text-align: justify; */
     padding: 10%;
     padding-left: 0;
 }
@@ -183,6 +184,47 @@ main > div{
 .top-spacing{
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+#app{
+    min-width:50%;
+}
+
+.account-management > div > div{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    font-size: 80%;
+    align-items: center;
+}
+
+.account-management > div > div >div>h2{
+    padding-bottom: 10%;
+}
+
+.account-management > div > div > div > div{
+    column-count: 2;
+    display: flex;
+    flex-direction: row;
+    max-width: 80vw;
+    box-sizing: border-box;
+}
+
+.download-badge {
+    max-width: 100%; /* Makes the badge's width responsive to its container */
+    height: 50px; /* Maintains the aspect ratio */
+    object-fit: contain;
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin: 0 auto; /* Optionally centers the badge within its container */
+    padding-right: 10%;
+}
+
+#app-mockup{
+    display: block; /* Makes the image a block-level element */
+    max-height: 60vh;
+    width: auto; /* Maintains the aspect ratio */
+    margin-right: 10%; 
+    padding-left: 0; /* Remove padding-left if it's not required for other purposes */
 }
 
 /* footer */
@@ -290,6 +332,9 @@ div.hover-shadow {
     *{
         max-width: 100%;
     }
+    body{
+        font-size: 100%;
+    }
     header{
         visibility: visible;
     }
@@ -320,6 +365,16 @@ div.hover-shadow {
     
     #menu .active {
         color: #fe0079 !important; /* Style the active menu item */
+    }
+
+    .account-management > div > div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .account-management > div > div > div{
+        width:50%;
+        align-items: center;
     }
     
     #menu-mobile{
