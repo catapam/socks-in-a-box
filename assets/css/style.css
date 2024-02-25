@@ -190,7 +190,7 @@ main > div{
     padding-bottom: 10%;
 }
 
-.account-management > div > div > div > div{
+.download{
     column-count: 2;
     display: flex;
     flex-direction: row;
@@ -400,14 +400,41 @@ footer {
 }
 
 #footer{
+    padding-top: 0;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+}
+
+#footer > div{
     background-color: #ffffff0f;
-    bottom: 0;
-    margin: 0;
-    padding-bottom: 0;
-    padding-top: 1rem;
     width: 100%;
     color: white;
-    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer p{
+    color: white;
+}
+
+#copyright{
+    padding-top: 1rem;
+    color: #4e4e4e;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#matheus, #tos{
+    font-size: 75%;
+    margin: auto;
+}
+
+#description, #download-footer, #social {
+    width: 33%;
 }
 
 #menu-mobile {
