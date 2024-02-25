@@ -16,22 +16,11 @@ html, body {
 
 /* Ensure no other styles are affecting the menu alignment */
 body{
-    display:flex;
-    min-height: 100vh;
-    flex-direction: column;
-    /* Generic project styles */
     color: #061033 ;
     font-family: 'Chewy', sans-serif;
     font-size: 85%;
-    height:100%;
-    overflow-y:auto;
     scrollbar-width: thin;
     scrollbar-color: #fe007b65 transparent; 
-}
-
-body > nav {
-    width: 100%;
-    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -103,7 +92,6 @@ main{
     display:flex;
     flex-direction: column;
     width: 100%;
-    overflow-y: auto;
     padding-top: 8%;
 }
 
@@ -116,7 +104,7 @@ main > div{
     height: auto;
     min-height: 90vh;
     width: 100vw;
-    margin-top: -3%;
+    margin-top: 0;
     position:relative;
     background-image: url("../images/hero.webp");
 	background-size: cover;
@@ -399,24 +387,43 @@ main > div{
 
 /* footer */
 footer {
-    position: fixed;
+    position: relative;
     justify-content: space-around; /* This is applied to the footer itself */
     width: 100vw; /* Set width to 100% of the viewport width */
     background-color: #061033; /* Set the background color */
-    padding: 10px; /* Add padding for spacing */
+    padding: 0; /* Add padding for spacing */
     display: flex;
     bottom: 0;
     left: 0;
+    margin: 0;
+    flex-direction: column;
+}
+
+#footer{
+    background-color: #ffffff0f;
+    bottom: 0;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 1rem;
+    width: 100%;
+    color: white;
+    display: none;
+    position: relative;
 }
 
 #menu-mobile {
     list-style: none;
     margin: 0;
-    padding: 0;
-    display: flex;
-    width: 100%; /* Ensure it takes the full width */
-    justify-content: space-around; /* This ensures items are evenly spread */
-    position: relative;
+    padding: 10px;
+    display: flex; /* Ensure it's visible */
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #061033; 
+    position: fixed; /* Fix it to the bottom */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Align it to the left */
+    z-index: 100; /* Ensure it's above other content */
 }
 
 #menu-mobile li {
@@ -443,7 +450,6 @@ footer {
 }
 
 /* Hover effects */
-
 .grow {
 	-webkit-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
@@ -502,12 +508,26 @@ div.hover-shadow {
     *{
         max-width: 100%;
     }
+
+    html, body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     body{
         font-size: 100%;
+        min-height: 100vh;
     }
+
+    main{
+        flex: 1;   
+    }
+
     header{
         visibility: visible;
     }
+    
     #menu {
         list-style: none;
         margin: 0;
@@ -554,12 +574,19 @@ div.hover-shadow {
     }
 
     .support-btn, .support-popup {
-        bottom: 40px;
+        bottom: 10px;
         right: 40px;
     }
     
-    #menu-mobile{
-        display:none;
+    #menu-mobile {
+        display: none; /* Hide the mobile menu */
+    }
+
+    #footer {
+        display: flex; /* Show the desktop footer */
+        position: static; /* Ensure it flows with the content */
+        bottom: auto; /* Reset any bottom alignment */
+        left: auto; /* Reset any left alignment */
     }
 }
 
