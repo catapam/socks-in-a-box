@@ -304,6 +304,7 @@ main > div{
 }
 
 .support-btn {
+    z-index: 100;
     position: fixed;
     bottom: 80px;
     right: 30px;
@@ -419,7 +420,8 @@ footer {
     padding-left: 15%;
     padding-right: 15%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding-bottom: 2%;
 }
 
 #footer p{
@@ -443,26 +445,39 @@ footer {
 #matheus, #tos{
     font-size: 75%;
     margin: auto;
+    text-align: center;
 }
 
-#description, #download-footer, #social {
-    width: 33%;
+#description, #download-footer {
+    text-align: center;
+    width: 100%;
 }
 
 #description{
     display: flex;
     justify-content:left;
+    font-size: 80%;
 }
 
 #download-footer{
     display: flex;
-    justify-content:center;
+    align-items: center;
     min-height: 40px;
+    flex-direction: column;
+}
+
+#download-footer > p{
+    padding-top: 10%;
 }
 
 #social{
-    display: flex;
-    justify-content:right;
+    padding-top: 3%;
+}
+
+#social a {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #061033 ;
 }
 
 #menu-mobile {
@@ -646,6 +661,18 @@ div.hover-shadow {
     footer{
         bottom: 0;
     }
+
+    #description, #download-footer {
+        width: 50%;
+    }
+
+    #main-footer{
+        flex-direction: row;
+    }
+
+    #download-footer > p{
+        padding-top: 5px;
+    }    
 }
 
 @media screen and (min-width: 768px) {
