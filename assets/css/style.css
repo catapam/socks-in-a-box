@@ -393,7 +393,7 @@ footer {
     background-color: #061033; /* Set the background color */
     padding: 0; /* Add padding for spacing */
     display: flex;
-    bottom: 0;
+    bottom: 67.2px;
     left: 0;
     margin: 0;
     flex-direction: column;
@@ -407,7 +407,6 @@ footer {
     padding-top: 1rem;
     width: 100%;
     color: white;
-    display: none;
     position: relative;
 }
 
@@ -587,6 +586,10 @@ div.hover-shadow {
         position: static; /* Ensure it flows with the content */
         bottom: auto; /* Reset any bottom alignment */
         left: auto; /* Reset any left alignment */
+    }
+    
+    footer{
+        bottom: 0;
     }
 }
 
