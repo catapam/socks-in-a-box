@@ -294,6 +294,34 @@ main > div{
     max-height: 150px;
 }
 
+/* Gallery section */
+.gallery{
+    position: relative;
+    margin: auto;
+}
+
+.hall_of_fame img {
+    max-width: 100%;
+    line-height: 1em;
+}
+
+.hall_of_fame {
+    line-height: 0;
+    display: flex;
+    flex-direction: row;
+    column-count: 2;
+}
+
+.photo01{
+    width:12.5%;
+    height: 12.5%;
+}
+
+.photo02{
+    width:25%;
+    height: auto;
+}
+
 /* footer */
 footer {
     position: fixed;
