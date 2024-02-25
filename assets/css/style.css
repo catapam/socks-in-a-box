@@ -233,6 +233,8 @@ main > div{
     flex-direction: row;
     text-align: center;
     align-items: center;
+    position: relative;
+    margin: auto;
 }
 
 .testimonial-section p{
@@ -240,12 +242,38 @@ main > div{
 }
 
 .testimonial-section > .table {
-    width:80%;
+    width: 100%;
     flex-wrap: nowrap;
     overflow-x: auto; /* Enables horizontal scrolling */
+    justify-content: flex-start; /* Align content to the left */
+    gap: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative; /* Position relative for stacking context */
+    align-items: flex-start; /* Align items to the start of the cross axis */
+}
+
+.testimonial-section::after,
+.testimonial-section::before {
+    content: '';
+    position: absolute;
+    width: 15px; /* Width of the shadow */
+    height: 15rem;
+    background: radial-gradient(ellipse farthest-side at 120% center, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); /* Adjust opacity as needed */
+    pointer-events: none; /* Ensure the pseudo-element doesn't interfere with mouse events */
+}
+
+.testimonial-section::after {
+    right: 0;
+}
+
+.testimonial-section::before {
+    left: 0;
+    transform: scaleX(-1); /* Mirror the gradient horizontally */
 }
 
 .testimonial-card{
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -264,10 +292,6 @@ main > div{
     border-radius: 50%;
     max-width: 150px;
     max-height: 150px;
-}
-
-#right-arrow,#left-arrow {
-    width: 10%;
 }
 
 /* footer */
@@ -429,17 +453,10 @@ div.hover-shadow {
     .feature-card{
         width: calc(50% - 20px); /*Adjust based on the gap and number of items per row*/;
     }
-    .testimonial-card{
-        width: calc(50% - 20px); /*Adjust based on the gap and number of items per row*/;
-    }
 }
 
 @media screen and (min-width: 1129px) {
     .feature-card{
-        width: calc(33% - 20px); /*Adjust based on the gap and number of items per row*/;
-    }
-
-    .testimonial-card{
         width: calc(33% - 20px); /*Adjust based on the gap and number of items per row*/;
     }
 
