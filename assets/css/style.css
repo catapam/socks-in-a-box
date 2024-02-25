@@ -347,6 +347,11 @@ main > div{
     width: 300px;
     max-width: 100%;
   }
+
+.support-popup #message{
+    max-height: 50vh;
+    min-width: 100%;
+}
   
   /* Show pop-up when checkbox is checked */
   #supportToggle:checked + .support-btn + .support-popup {
