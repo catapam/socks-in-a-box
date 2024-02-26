@@ -445,6 +445,11 @@ p {
 }
 
 /* 404 page */
+.not-found {
+    height: auto;
+    min-height: 90vh;
+}
+
 .not-found > h1{
     color: #fe0079;
     font-size: 320%;
@@ -712,6 +717,11 @@ div.hover-shadow {
     #menu-mobile {
         display: none;
         /* Hide the mobile menu */
+    }
+
+    .not-found {
+        height: auto;
+        min-height: 60vh;
     }
 
     #footer {
