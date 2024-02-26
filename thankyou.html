@@ -48,7 +48,10 @@
             <input type="checkbox" id="supportToggle" hidden>
 
             <!-- Support button label for the hidden checkbox -->
-            <label for="supportToggle" class="support-btn"><i class="fa-solid fa-headset"></i></label>
+            <label for="supportToggle" class="support-btn">
+                <i class="fa-solid fa-headset"></i>
+                <span class="sr-only">Support</span>
+            </label>
 
             <!-- Pop-up form -->
             <div class="support-popup">
@@ -56,8 +59,11 @@
                 <form class="support-form" method="post" action="https://formdump.codeinstitute.net">
                     <!-- Form fields -->
                     <p>How can we assist you?</p>
+                    <label for="full-name" class="sr-only">Full name</label>
                     <input type="text" name="full-name" id="full-name" placeholder="Your Full Name" required>
+                    <label for="full-name" class="sr-only">Email address</label>
                     <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <label for="message" class="sr-only">Message</label>
                     <textarea name="message" id="message" placeholder="Your Message" required></textarea>
                     <button type="submit">Send</button>
                 </form>

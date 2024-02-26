@@ -55,6 +55,20 @@ p {
     display: none;
 }
 
+.sr-only {
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px); 
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px); 
+    height: 1px; 
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px; 
+    white-space: nowrap; 
+}
+
 /* Header */
 header {
     background-color: #061033;
@@ -410,6 +424,7 @@ p {
     padding: 20px;
     width: 300px;
     max-width: 100%;
+    z-index: 999;
 }
 
 .support-popup #message {
