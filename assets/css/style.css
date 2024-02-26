@@ -465,7 +465,6 @@ footer {
 
 #description,
 #social,
-#tos,
 #matheus {
     padding-left: 5%;
     padding-right: 5%;
@@ -501,8 +500,7 @@ footer {
     color: #ffffff64;
 }
 
-#matheus,
-#tos {
+#matheus {
     font-size: 75%;
     margin: auto;
     text-align: center;
