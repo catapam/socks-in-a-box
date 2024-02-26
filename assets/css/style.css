@@ -6,33 +6,45 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color:white;
+    color: white;
     scrollbar-width: thin;
-    scrollbar-color: #fe007b65 transparent!important;
+    /* Set up the scrollbar styles */
+    scrollbar-color: #fe007b65 transparent !important;
 }
 
-html, body {
+/* allows the scrolling only on the body of the site */
+html,
+body {
     height: 100%;
     overflow: auto;
 }
 
 /* Ensure no other styles are affecting the menu alignment */
-body{
-    color: #061033 ;
+body {
+    color: #061033;
     font-family: 'Chewy', sans-serif;
-    font-size: 85%; 
+    font-size: 85%;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+/* set font styles for all text on the site */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     font-family: 'Comic Sans MS', sans-serif;
     letter-spacing: 2px;
     color: white;
 }
 
+/* change letter spacing for the p elements */
 p {
     letter-spacing: 0;
 }
 
+/* hide headers that are not needed for the layot but for SEO purposes */
 .hidden-heading {
     display: none;
 }
@@ -41,16 +53,18 @@ p {
 header {
     background-color: #061033;
     font-family: 'Chewy', sans-serif;
-    color:inherit;
+    color: inherit;
     position: fixed;
     z-index: 99;
     width: 100%;
     height: 8%;
-    align-items: center; 
+    align-items: center;
     visibility: hidden;
+    /*Hides header by default, there is a media query reverting it for bigger screens */
 }
 
-header > nav {
+/* set a header margin to the right so menu does not get hidden behind the scrollbar */
+header>nav {
     margin-right: 30px;
 }
 
@@ -59,12 +73,15 @@ header > nav {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* Vertically center the content within the brand */
+    align-items: center;
+    /* Vertically center the content within the brand */
     position: absolute;
     justify-content: left;
     padding-left: 1rem;
     list-style-type: none;
-    text-decoration: none; 
+    /* hide the list marks */
+    text-decoration: none;
+    /* hide the underscore for links*/
 }
 
 #brand li {
@@ -72,53 +89,60 @@ header > nav {
 }
 
 #logo {
-    margin-right: 10px; /* Add margin to the right of the logo */
-    max-height: 50px; /* Set a maximum height for the logo */
+    margin-right: 10px;
+    /* Add margin to the right of the logo */
+    max-height: 50px;
+    /* Set a maximum height for the logo */
 }
 
+/* styles for the link on the logo*/
 #brand a {
     text-decoration: none;
-    color: inherit; /* Adjust text color as needed */
+    color: inherit;
     font-size: 150%;
 }
 
-#menu{
-    display:none;
+/* hide superior menu by deafult, there is a media query reverting it on bigger screens*/
+#menu {
+    display: none;
 }
 
 /* main */
-main{
+main {
     background-color: #061033;
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 8%;
+    padding-top: 5%;
+    /* Skip the room used for the top menu */
 }
 
-main > div{
+/*define the laterail paddings for the body of the site*/
+main>div {
     padding-left: 15%;
     padding-right: 15%;
 }
 
-#hero{
+#hero {
     height: auto;
     min-height: 90vh;
     width: 100vw;
     margin-top: 0;
-    position:relative;
+    position: relative;
     background-image: url("../images/hero.webp");
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	overflow: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
     z-index: 0;
 }
 
-.features{
+.features {
     padding-top: 5%;
 }
 
-.title{
+/* set formatting for all titles*/
+.title {
     padding-bottom: 0;
     margin-bottom: 0;
     padding-left: 2%;
@@ -129,68 +153,79 @@ main > div{
     padding-top: 2%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Or any other alignment you prefer */
-    gap: 20px; /* Space between the cards */
+    justify-content: space-around;
+    /* spread cards throughout the screen width*/
+    gap: 20px;
+    /* Space between the cards */
 }
 
 .feature-card {
-    display: flex; /* Keeps the content aligned flexibly */
+    display: flex;
+    /* Keeps the content aligned flexibly */
     padding: 10px;
-    min-height: 15rem; /* Minimum height, but allows expansion based on flex properties */
+    min-height: 15rem;
+    /* Minimum height, but allows expansion based on flex properties */
     background-color: #20f8fcbb;
     border-radius: 40px;
-    width: 100%; /*Adjust based on the gap and number of items per row*/
-    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    width: 100%;
+    /*Adjust based on the gap and number of items per row*/
+    box-sizing: border-box;
+    /* Ensures padding is included in the width calculation */
     min-width: 250px;
 }
 
 .feature-card i {
-    margin-right: 20px; /* Adds some space between the icon and the text */
+    margin-right: 20px;
+    /* Adds some space between the icon and the text */
     padding-top: 20px;
-    /* Adjust font-size as needed to make the icons larger or smaller */
-    font-size: 48px; /* Example size, adjust as needed */
+    font-size: 48px;
+    /* Example size, adjust as needed */
     color: #061033;
 }
 
-.feature-card h2,p{
+/* Format text within the feature cards*/
+.feature-card h2,
+p {
     padding-top: 5px;
     color: #061033;
 }
 
-.feature-card p{
-    /* text-align: justify; */
+.feature-card p {
     padding: 10%;
     padding-left: 0;
 }
 
 /* Ensures the text content is aligned next to the icon */
-.feature-card > div {
+.feature-card>div {
     display: flex;
     flex-direction: column;
 }
 
-.top-spacing{
+/* define some room in between sections on the home page*/
+.top-spacing {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
-#app{
-    min-width:50%;
+/* width for the app block within the account management section*/
+#app {
+    min-width: 50%;
 }
 
-.account-management > div > div{
+.account-management>div>div {
     display: flex;
     flex-direction: column;
-    width:100%;
+    width: 100%;
     font-size: 80%;
     align-items: center;
 }
 
-.account-management > div > div >div>h2{
+.account-management>div>div>div>h2 {
     padding-bottom: 10%;
 }
 
-.download{
+/* Set download buttons both for the account management section and footer*/
+.download {
     column-count: 2;
     display: flex;
     flex-direction: row;
@@ -199,21 +234,28 @@ main > div{
 }
 
 .download-badge {
-    max-width: 100%; /* Makes the badge's width responsive to its container */
-    height: 50px; /* Maintains the aspect ratio */
+    max-width: 100%;
+    /* Makes the badge's width responsive to its container */
+    height: 50px;
+    /* Maintains the aspect ratio */
     object-fit: contain;
-    display: block; /* Ensures the image is treated as a block-level element */
-    margin: 0 auto; /* Optionally centers the badge within its container */
+    display: block;
+    /* Ensures the image is treated as a block-level element */
+    margin: 0 auto;
+    /* Centers the badge within its container */
     padding-right: 5%;
     padding-left: 5%;
 }
 
-#app-mockup{
-    display: block; /* Makes the image a block-level element */
+#app-mockup {
+    display: block;
+    /* Makes the image a block-level element */
     max-height: 60vh;
-    width: auto; /* Maintains the aspect ratio */
-    margin-right: 10%; 
-    padding-left: 0; /* Remove padding-left if it's not required for other purposes */
+    width: auto;
+    /* Maintains the aspect ratio */
+    margin-right: 10%;
+    padding-left: 0;
+    /* Remove padding-left */
 }
 
 /* testimonials */
@@ -226,30 +268,35 @@ main > div{
     margin: auto;
 }
 
-.testimonial-section p{
+.testimonial-section p {
     color: white;
 }
 
-.testimonial-section > .table {
+.testimonial-section>.table {
     width: 100%;
     flex-wrap: nowrap;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    justify-content: flex-start; /* Align content to the left */
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    justify-content: flex-start;
+    /* Align content to the left */
     gap: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-    position: relative; /* Position relative for stacking context */
-    align-items: flex-start; /* Align items to the start of the cross axis */
+    position: relative;
+    /* Position relative for stacking context */
+    align-items: flex-start;
+    /* Align items to the start of the cross axis */
 }
 
 .testimonial-section::after,
 .testimonial-section::before {
     content: '';
     position: absolute;
-    width: 15px; /* Width of the shadow */
+    width: 15px;
+    /* Width of the shadow */
     height: 15rem;
-    background: radial-gradient(ellipse farthest-side at 120% center, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); /* Adjust opacity as needed */
-    pointer-events: none; /* Ensure the pseudo-element doesn't interfere with mouse events */
+    background: radial-gradient(ellipse farthest-side at 120% center, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    /* Adjust opacity as needed */
+    pointer-events: none;
+    /* Ensure the pseudo-element doesn't interfere with mouse events */
 }
 
 .testimonial-section::after {
@@ -258,23 +305,27 @@ main > div{
 
 .testimonial-section::before {
     left: 0;
-    transform: scaleX(-1); /* Mirror the gradient horizontally */
+    transform: scaleX(-1);
+    /* Mirror the gradient horizontally */
 }
 
-.testimonial-card{
+.testimonial-card {
     top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 10px;
-    min-height: 15rem; /* Minimum height, but allows expansion based on flex properties */
-    width: 100%; /*Adjust based on the gap and number of items per row*/
-    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    min-height: 15rem;
+    /* Minimum height, but allows expansion based on flex properties */
+    width: 100%;
+    /*Adjust based on the gap and number of items per row*/
+    box-sizing: border-box;
+    /* Ensures padding is included in the width calculation */
     min-width: 150px;
 }
 
-.profile_image > img{
+.profile_image>img {
     height: 90vh;
     width: 90vw;
     margin-bottom: 20px;
@@ -288,7 +339,8 @@ main > div{
     padding: 0;
     line-height: 100%;
     max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .hall_of_fame {
@@ -299,8 +351,13 @@ main > div{
 
 /* Quick support button */
 /* Button styles */
-.support-btn, .support-btn .fa-solid, .support-popup, .support-form input, .support-form textarea {
-    color: #061033 !important; /* Force override */
+.support-btn,
+.support-btn .fa-solid,
+.support-popup,
+.support-form input,
+.support-form textarea {
+    color: #061033 !important;
+    /* Force override */
 }
 
 .support-btn {
@@ -312,88 +369,86 @@ main > div{
     font-size: 25px;
     height: 60px;
     width: 60px;
-    line-height: 60px; /* Aligns icon/text vertically */
-    text-align: center; /* Keeps icon/text centered horizontally */
+    line-height: 60px;
+    /* Aligns icon/text vertically */
+    text-align: center;
+    /* Keeps icon/text centered horizontally */
     cursor: pointer;
     border: 4px solid #20f9fc;
     border-radius: 50%;
     animation-name: pulseAnimation;
-    animation-duration: 9s; /* How long one cycle of the animation takes */
-    animation-iteration-count: infinite; /* Repeat the animation forever */
-    animation-timing-function: ease-in-out; /* Speed curve of the animation */
-    animation-delay: 2s; /* Wait before starting the animation */
+    animation-duration: 9s;
+    /* How long one cycle of the animation takes */
+    animation-iteration-count: infinite;
+    /* Repeat the animation forever */
+    animation-timing-function: ease-in-out;
+    /* Speed curve of the animation */
+    animation-delay: 2s;
+    /* Wait before starting the animation */
 }
-  
-  /* Pop-up styles */
-  .support-popup {
+
+/* Pop-up styles */
+.support-popup {
     display: none;
     position: fixed;
     bottom: 80px;
     right: 30px;
     background-color: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px 10px 0 0;
     padding: 20px;
     width: 300px;
     max-width: 100%;
-  }
+}
 
-.support-popup #message{
+.support-popup #message {
     max-height: 50vh;
     min-width: 100%;
 }
-  
-  /* Show pop-up when checkbox is checked */
-  #supportToggle:checked + .support-btn + .support-popup {
+
+/* Show pop-up when checkbox is checked */
+#supportToggle:checked+.support-btn+.support-popup {
     display: block;
-  }
-  
-  /* Close button styles */
-  .popup-close {
+}
+
+/* Close button styles */
+.popup-close {
     display: block;
     text-align: right;
     cursor: pointer;
     color: #061033;
-  }
-  
-  /* Form styling */
-  .support-form input,
-  .support-form textarea {
+}
+
+/* Form styling */
+.support-form input,
+.support-form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #061033;
-  }
-  
-  .support-form button {
+}
+
+.support-form button {
     background-color: #fe0079;
     color: #061033;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-
-  @keyframes pulseAnimation {
-    0%, 14.28%, 28.56% { /* 1s of active animation in a 7s total duration */
-      transform: scale(1);
-    }
-    7.14%, 21.42% { /* Midpoint of the active animation */
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }  
+}
 
 /* footer */
 footer {
     position: relative;
-    justify-content: space-around; /* This is applied to the footer itself */
-    width: 100vw; /* Set width to 100% of the viewport width */
-    background-color: #061033; /* Set the background color */
-    padding: 0; /* Add padding for spacing */
+    justify-content: space-around;
+    /* This is applied to the footer itself */
+    width: 100vw;
+    /* Set width to 100% of the viewport width */
+    background-color: #061033;
+    /* Set the background color */
+    padding: 0;
+    /* Add padding for spacing */
     display: flex;
     bottom: 67.2px;
     left: 0;
@@ -401,19 +456,22 @@ footer {
     flex-direction: column;
 }
 
-#footer{
+#footer {
     padding-top: 0;
     width: 100%;
     position: relative;
     flex-direction: column;
 }
 
-#description,#social,#tos,#matheus{
+#description,
+#social,
+#tos,
+#matheus {
     padding-left: 5%;
     padding-right: 5%;
 }
 
-#main-footer{
+#main-footer {
     background-image: #061033;
     width: 100%;
     color: 061033;
@@ -424,11 +482,11 @@ footer {
     padding-bottom: 2%;
 }
 
-#footer p{
+#footer p {
     color: #ffffff;
 }
 
-#copyright{
+#copyright {
     padding-top: 0;
     background-color: #061033;
     display: flex;
@@ -438,68 +496,79 @@ footer {
     padding-right: 15%;
 }
 
-#copyright p, #copyright a{
-    color:#ffffff64;
+#copyright p,
+#copyright a {
+    color: #ffffff64;
 }
 
-#matheus, #tos{
+#matheus,
+#tos {
     font-size: 75%;
     margin: auto;
     text-align: center;
 }
 
-#description, #download-footer {
+#description,
+#download-footer {
     text-align: center;
     width: 100%;
 }
 
-#description{
+#description {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     font-size: 80%;
 }
 
-#download-footer{
+#download-footer {
     display: flex;
     align-items: center;
     min-height: 40px;
     flex-direction: column;
 }
 
-#download-footer > p{
+#download-footer>p {
     padding-top: 10%;
 }
 
-#social{
+#social {
     padding-top: 3%;
 }
 
 #social a {
     padding-left: 5%;
     padding-right: 5%;
-    color: #061033 ;
+    color: #061033;
 }
 
 #menu-mobile {
     list-style: none;
     margin: 0;
     padding: 10px;
-    display: flex; /* Ensure it's visible */
+    display: flex;
+    /* Ensure it's visible */
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    background-color: #061033; 
-    position: fixed; /* Fix it to the bottom */
-    bottom: 0; /* Align it to the bottom */
-    left: 0; /* Align it to the left */
-    z-index: 100; /* Ensure it's above other content */
+    background-color: #061033;
+    position: fixed;
+    /* Fix it to the bottom */
+    bottom: 0;
+    /* Align it to the bottom */
+    left: 0;
+    /* Align it to the left */
+    z-index: 100;
+    /* Ensure it's above other content */
 }
 
 #menu-mobile li {
-    flex-grow: 1; /* This makes each list item grow and fill the footer */
+    flex-grow: 1;
+    /* This makes each list item grow and fill the footer */
     display: flex;
-    justify-content: center; /* Center content of each li */
-    align-items: center; /* Vertically aligns the content */
+    justify-content: center;
+    /* Center content of each li */
+    align-items: center;
+    /* Vertically aligns the content */
 }
 
 #menu-mobile a {
@@ -513,126 +582,108 @@ footer {
 }
 
 #menu-mobile .active {
-    background-color: #fe0079 ; /* Style the active menu item */
+    background-color: #fe0079;
+    /* Style the active menu item */
     border-radius: 20%;
     font-size: 200%;
 }
 
 /* Hover effects */
 .grow {
-	-webkit-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .grow:hover {
-	-webkit-transform: scale(1.01);
-	    -ms-transform: scale(1.01);
-	        transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
 }
 
 .shake:hover {
     animation: shake 0.5s ease-in-out;
 }
 
-@keyframes shake {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    25%, 75% {
-        transform: translateX(-2px);
-    }
-    50% {
-        transform: translateX(2px);
-    }
-}
-
 .shakev:hover {
     animation: shakev 0.5s ease-in-out;
 }
 
-@keyframes shakev {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    25%, 75% {
-        transform: translateY(-2px);
-    }
-    50% {
-        transform: translateY(2px);
-    }
-}
-
 div.hover-shadow {
-    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+    transition: box-shadow 0.3s ease;
+    /* Smooth transition for the shadow effect */
 }
 
-.hover-shadow:hover{
-    box-shadow: 0 5px 15px rgba(254, 0, 121,0.5);
+.hover-shadow:hover {
+    box-shadow: 0 5px 15px rgba(254, 0, 121, 0.5);
 }
 
 
 /* media queries */
 @media screen and (min-width: 576px) {
-    *{
+    * {
         max-width: 100%;
     }
 
-    html, body {
+    html,
+    body {
         height: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    body{
+    body {
         font-size: 100%;
         min-height: 100vh;
     }
 
-    main{
-        flex: 1;   
+    main {
+        flex: 1;
     }
 
-    header{
+    header {
         visibility: visible;
     }
-    
+
     #menu {
         list-style: none;
         margin: 0;
         padding: 0;
         display: flex;
-        justify-content: flex-end; /* Align the menu to the right side of the screen */
+        justify-content: flex-end;
+        /* Align the menu to the right side of the screen */
         font-size: 120%;
         letter-spacing: 2px;
     }
-    
+
     #menu li {
         margin: 0;
     }
-    
+
     #menu a {
         text-decoration: none;
         color: white;
         padding: 15px 15px;
         display: block;
     }
-    
+
     #menu a:hover {
-        color: #20f9fc; /* Change background color on hover */
-    }
-    
-    #menu .active {
-        color: #fe0079 !important; /* Style the active menu item */
+        color: #20f9fc;
+        /* Change background color on hover */
     }
 
-    .account-management > div > div{
+    #menu .active {
+        color: #fe0079 !important;
+        /* Style the active menu item */
+    }
+
+    .account-management>div>div {
         display: flex;
         flex-direction: row;
     }
 
-    .account-management > div > div > div{
-        width:50%;
+    .account-management>div>div>div {
+        width: 50%;
         align-items: center;
     }
 
@@ -642,71 +693,139 @@ div.hover-shadow {
         gap: 0;
     }
 
-    .support-btn, .support-popup {
+    .support-btn,
+    .support-popup {
         bottom: 10px;
         right: 40px;
     }
-    
+
     #menu-mobile {
-        display: none; /* Hide the mobile menu */
+        display: none;
+        /* Hide the mobile menu */
     }
 
     #footer {
-        display: flex; /* Show the desktop footer */
-        position: static; /* Ensure it flows with the content */
-        bottom: auto; /* Reset any bottom alignment */
-        left: auto; /* Reset any left alignment */
+        display: flex;
+        /* Show the desktop footer */
+        position: static;
+        /* Ensure it flows with the content */
+        bottom: auto;
+        /* Reset any bottom alignment */
+        left: auto;
+        /* Reset any left alignment */
     }
-    
-    footer{
+
+    footer {
         bottom: 0;
     }
 
-    #description, #download-footer {
+    #description,
+    #download-footer {
         width: 50%;
     }
 
-    #main-footer{
+    #main-footer {
         flex-direction: row;
     }
 
-    #download-footer > p{
+    #download-footer>p {
         padding-top: 5px;
-    }    
+    }
 }
 
 @media screen and (min-width: 768px) {
-    .feature-card{
-        width: calc(50% - 20px); /*Adjust based on the gap and number of items per row*/;
+    .feature-card {
+        width: calc(50% - 20px);
+        /*Adjust based on the gap and number of items per row*/
+        ;
     }
 }
 
 @media screen and (min-width: 1129px) {
-    .feature-card{
-        width: calc(33% - 20px); /*Adjust based on the gap and number of items per row*/;
+    .feature-card {
+        width: calc(33% - 20px);
+        /*Adjust based on the gap and number of items per row*/
+        ;
     }
 
-    .diagonal-top-left:hover{
-        -webkit-transform: scale(1.01) skew(-0.3deg, -0.5deg); /* Chrome, Safari, Opera */
-            -ms-transform: scale(1.01) skew(-0.3deg, -0.5deg); /* IE 9 */
-                transform: scale(1.01) skew(-0.3deg, -0.5deg); /* Standard syntax */
+    .diagonal-top-left:hover {
+        -webkit-transform: scale(1.01) skew(-0.3deg, -0.5deg);
+        /* Chrome, Safari, Opera */
+        -ms-transform: scale(1.01) skew(-0.3deg, -0.5deg);
+        /* IE 9 */
+        transform: scale(1.01) skew(-0.3deg, -0.5deg);
+        /* Standard syntax */
     }
-    
-    .diagonal-top-right:hover{
-        -webkit-transform: scale(1.01) skew(0.3deg, 0.5deg); /* Chrome, Safari, Opera */
-            -ms-transform: scale(1.01) skew(0.3deg, 0.5deg); /* IE 9 */
-                transform: scale(1.01) skew(0.3deg, 0.5deg); /* Standard syntax */
+
+    .diagonal-top-right:hover {
+        -webkit-transform: scale(1.01) skew(0.3deg, 0.5deg);
+        -ms-transform: scale(1.01) skew(0.3deg, 0.5deg);
+        transform: scale(1.01) skew(0.3deg, 0.5deg);
     }
-    
-    .diagonal-bottom-left:hover{
-        -webkit-transform: scale(1.01) skew(-0.3deg, 0.5deg); /* Chrome, Safari, Opera */
-            -ms-transform: scale(1.01) skew(-0.3deg, 0.5deg); /* IE 9 */
-                transform: scale(1.01) skew(-0.3deg, 0.5deg); /* Standard syntax */
+
+    .diagonal-bottom-left:hover {
+        -webkit-transform: scale(1.01) skew(-0.3deg, 0.5deg);
+        -ms-transform: scale(1.01) skew(-0.3deg, 0.5deg);
+        transform: scale(1.01) skew(-0.3deg, 0.5deg);
     }
-    
-    .diagonal-bottom-right:hover{
-        -webkit-transform: scale(1.01) skew(0.3deg, -0.5deg); /* Chrome, Safari, Opera */
-            -ms-transform: scale(1.01) skew(0.3deg, -0.5deg); /* IE 9 */
-                transform: scale(1.01) skew(0.3deg, -0.5deg); /* Standard syntax */
-    }    
+
+    .diagonal-bottom-right:hover {
+        -webkit-transform: scale(1.01) skew(0.3deg, -0.5deg);
+        -ms-transform: scale(1.01) skew(0.3deg, -0.5deg);
+        transform: scale(1.01) skew(0.3deg, -0.5deg);
+    }
+}
+
+@keyframes pulseAnimation {
+
+    0%,
+    14.28%,
+    28.56% {
+        /* 1s, 3rd and 5th of active animation in total duration */
+        transform: scale(1);
+    }
+
+    7.14%,
+    21.42% {
+        /* Midpoint of the active animation */
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25%,
+    75% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+}
+
+@keyframes shakev {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25%,
+    75% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
 }
