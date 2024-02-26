@@ -39,6 +39,12 @@ p {
     color: white;
 }
 
+.centered{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 /* change letter spacing for the p elements */
 p {
     letter-spacing: 0;
@@ -436,6 +442,12 @@ p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* 404 page */
+.not-found > h1{
+    color: #fe0079;
+    font-size: 320%;
 }
 
 /* footer */
