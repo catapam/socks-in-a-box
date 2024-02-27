@@ -475,7 +475,7 @@ p {
     font-size: 320%;
 }
 
-.thank-you > h1,.puchased > h1{
+.thank-you h1,.purchased h1{
     color: #20f9fc;
     font-size: 320%;
 }
