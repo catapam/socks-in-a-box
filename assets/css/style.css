@@ -475,6 +475,11 @@ p {
     font-size: 320%;
 }
 
+.thank-you > h1,.puchased > h1{
+    color: #20f9fc;
+    font-size: 320%;
+}
+
 /* footer */
 footer {
     position: relative;
