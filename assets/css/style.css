@@ -24,6 +24,7 @@ body {
     color: #061033;
     font-family: 'Chewy', sans-serif;
     font-size: 85%;
+    gap: 0;
 }
 
 /* set font styles for all text on the site */
