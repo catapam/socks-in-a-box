@@ -144,7 +144,7 @@ main>div {
     padding-right: 15%;
 }
 
-#hero, #shop-hero,#about-hero,#support-hero {
+#hero, #shop-hero, #about-hero, #support-hero {
     height: auto;
     min-height: 90vh;
     width: 100vw;
@@ -389,6 +389,74 @@ p {
     column-count: 2;
     gap: 0;
 }
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    /* Keeps the content aligned flexibly */
+    padding: 10px;
+    min-height: 15rem;
+    /* Minimum height, but allows expansion based on flex properties */
+    border-radius: 40px;
+    width: 100%;
+    border-color: #fe0079;
+    border-style: solid;
+    /*Adjust based on the gap and number of items per row*/
+    box-sizing: border-box;
+    /* Ensures padding is included in the width calculation */
+    min-width: 250px;    
+}
+
+.plan-card > div{
+    display: flex;
+    flex-direction: row;
+}
+
+.plan-card > div >h3{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* toggle button for plan cards */
+/* Hide the checkbox */
+.toggle-checkbox {
+    display: none;
+  }
+
+  /* Style the label */
+  .toggle-label {
+    display: inline-block;
+    position: relative;
+    width: 35px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  /* Style the toggle indicator */
+  .toggle-label::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: #fe0079;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+
+  /* Move the toggle indicator to the right when checked */
+  .toggle-checkbox:checked + .toggle-label::before {
+    transform: translateX(15px);
+  }
+
+  /* Change background color when checked */
+  .toggle-checkbox:checked + .toggle-label {
+    background-color: #20f9fc;
+  }
 
 /* Quick support button */
 /* Button styles */
