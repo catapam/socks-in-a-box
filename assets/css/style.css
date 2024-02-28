@@ -413,7 +413,6 @@ p {
 /* plan table */
 .plan-table {
     gap: 20px;
-    padding: 0;
 }
 
 .plan-card {
@@ -437,7 +436,7 @@ p {
     padding-bottom: 10px;
 }
 
-.plan-card>div>h3 {
+.toggle-options {
     padding-left: 2%;
     padding-right: 2%;
     font-size: 70%;
@@ -451,6 +450,10 @@ p {
 
 .rainbow {
     animation: rainbow-color 2s infinite;
+}
+
+.annual{
+    padding-top: 41px;
 }
 
 .text-shaded {
@@ -923,6 +926,10 @@ div.hover-shadow {
     .purchased {
         height: auto;
         min-height: 60vh;
+    }
+
+    .annual{
+        padding-top: 44.2px;
     }
 
     #footer {
