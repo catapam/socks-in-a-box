@@ -410,13 +410,18 @@ p {
     gap: 0;
 }
 
-/* plan card */
+/* plan table */
+.plan-table{
+    gap: 20px;
+    padding: 0;
+}
+
 .plan-card {
     display: flex;
     flex-direction: column;
     /* Keeps the content aligned flexibly */
     padding: 10px;
-    min-height: 15rem;
+    min-height: 60vh;
     /* Minimum height, but allows expansion based on flex properties */
     border-radius: 40px;
     width: 100%;
@@ -428,6 +433,10 @@ p {
     min-width: 250px;
 }
 
+.plan-card .title{
+    padding-bottom: 10px;
+}
+
 .plan-card>div {
     display: flex;
     flex-direction: row;
@@ -436,11 +445,55 @@ p {
 .plan-card>div>h3 {
     padding-left: 2%;
     padding-right: 2%;
+    font-size: 70%;
+}
+
+#offer{
+    font-size: 85%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.rainbow {
+    animation: rainbow-color 2s infinite;
+  }
+
+.text-shaded{
+    color: gray;
+}
+
+#included{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 100%;
+    text-decoration: underline;
+}
+
+.plan-card ul{
+    margin-top: 0;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plan-card li{
+    margin-left: auto;
+    margin-right: auto;
+    list-style:none;
+    font-family: 'Comic Sans MS', sans-serif;
+    letter-spacing: 1px;
 }
 
 .plan-card>button {
-    padding-left: 2%;
-    padding-right: 2%;
+    height: 40px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background-color: #fe0079;
+    font-family: 'Chewy';
+    font-size: 120%;
 }
 
 /* toggle button for plan cards */
@@ -989,3 +1042,11 @@ div.hover-shadow {
         transform: translateY(2px);
     }
 }
+
+@keyframes rainbow-color {
+    0% { color: #20f9fc; } /* Cyan */
+    25% { color: #ffbd00; } /* Yellow */
+    50% { color: #fe0079; } /* Magenta */
+    75% { color: #ee5f00; } /* Orange */
+    100% { color: #20f9fc; } /* Back to Cyan */
+  }
