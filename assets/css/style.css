@@ -189,7 +189,7 @@ main>div {
     border-radius: 0 40px 40px 0;
 }
 
-#cover-text h2{
+#cover-text h2 {
     color: #061033;
 }
 
@@ -411,7 +411,7 @@ p {
 }
 
 /* plan table */
-.plan-table{
+.plan-table {
     gap: 20px;
     padding: 0;
 }
@@ -433,13 +433,8 @@ p {
     min-width: 250px;
 }
 
-.plan-card .title{
+.plan-card .title {
     padding-bottom: 10px;
-}
-
-.plan-card>div {
-    display: flex;
-    flex-direction: row;
 }
 
 .plan-card>div>h3 {
@@ -448,7 +443,7 @@ p {
     font-size: 70%;
 }
 
-#offer{
+#offer {
     font-size: 85%;
     padding-top: 5px;
     padding-bottom: 20px;
@@ -456,30 +451,30 @@ p {
 
 .rainbow {
     animation: rainbow-color 2s infinite;
-  }
+}
 
-.text-shaded{
+.text-shaded {
     color: gray;
 }
 
-#included{
+#included {
     margin-top: 20px;
     margin-bottom: 0;
     font-size: 100%;
     text-decoration: underline;
 }
 
-.plan-card ul{
+.plan-card ul {
     margin-top: 0;
     padding-top: 5px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.plan-card li{
+.plan-card li {
     margin-left: auto;
     margin-right: auto;
-    list-style:none;
+    list-style: none;
     font-family: 'Comic Sans MS', sans-serif;
     letter-spacing: 1px;
 }
@@ -535,6 +530,19 @@ p {
 /* Change background color when checked */
 .toggle-checkbox:checked+.toggle-label {
     background-color: #20f9fc;
+}
+
+/* Additional styles for toggle visibility */
+#toggle:not(:checked) ~ .annual{
+    display: none;
+}
+
+#toggle:checked ~ .monthly,#toggle:checked ~ .rainbow {
+    display: none;
+}
+
+#toggle:not(:checked) ~ .monthly {
+    display: block;
 }
 
 /* Quick support button */
@@ -1044,9 +1052,29 @@ div.hover-shadow {
 }
 
 @keyframes rainbow-color {
-    0% { color: #20f9fc; } /* Cyan */
-    25% { color: #ffbd00; } /* Yellow */
-    50% { color: #fe0079; } /* Magenta */
-    75% { color: #ee5f00; } /* Orange */
-    100% { color: #20f9fc; } /* Back to Cyan */
-  }
+    0% {
+        color: #20f9fc;
+    }
+
+    /* Cyan */
+    25% {
+        color: #ffbd00;
+    }
+
+    /* Yellow */
+    50% {
+        color: #fe0079;
+    }
+
+    /* Magenta */
+    75% {
+        color: #ee5f00;
+    }
+
+    /* Orange */
+    100% {
+        color: #20f9fc;
+    }
+
+    /* Back to Cyan */
+}
