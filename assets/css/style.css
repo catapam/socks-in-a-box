@@ -416,24 +416,23 @@ p {
 }
 
 .plan-card {
+    position: relative; /* Add this to create a positioning context */
     display: flex;
     flex-direction: column;
-    /* Keeps the content aligned flexibly */
     padding: 10px;
     min-height: 60vh;
-    /* Minimum height, but allows expansion based on flex properties */
     border-radius: 40px;
     width: 100%;
     border-color: #fe0079;
     border-style: solid;
-    /*Adjust based on the gap and number of items per row*/
     box-sizing: border-box;
-    /* Ensures padding is included in the width calculation */
     min-width: 250px;
+    /* Other styles remain unchanged */
 }
 
 .plan-card .title {
     padding-bottom: 10px;
+    padding-left: 0;
 }
 
 .toggle-options {
@@ -445,15 +444,15 @@ p {
 #offer {
     font-size: 85%;
     padding-top: 5px;
-    padding-bottom: 20px;
-}
-
-.rainbow {
     animation: rainbow-color 2s infinite;
 }
 
-.annual{
-    padding-top: 41px;
+.annual,.monthly{
+    padding-top: 40px;
+}
+
+.annual {
+    padding-bottom: 21px;
 }
 
 .text-shaded {
@@ -546,6 +545,46 @@ p {
 
 #toggle:not(:checked) ~ .monthly {
     display: block;
+}
+
+/* Directly position toggle options and related elements */
+.toggle, .toggle-checkbox, .toggle-label {
+    position: absolute;
+    top: 75px; /* Position 75px from the top of the plan-card */
+}
+
+/* Ensure the toggle options, checkbox, and label are horizontally aligned */
+.toggle {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 20px);
+    margin: auto;
+    column-count: 2;
+}
+
+.toggle-options{
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 2px;
+}
+
+.toggle-left{
+    padding-right: 25px;
+    width: 50%;
+    text-align: right;
+}
+
+.toggle-right{
+    padding-left: 25px;
+    width: 50%;
+}
+
+.toggle-checkbox {
+    left: calc(50% - 17.5px); 
+}
+
+.toggle-label {
+    left: calc(50% - 17.5px); 
 }
 
 /* Quick support button */
@@ -928,8 +967,12 @@ div.hover-shadow {
         min-height: 60vh;
     }
 
-    .annual{
-        padding-top: 44.2px;
+    .annual,.monthly{
+        padding-top: 34.2px;
+    }
+
+    .annual {
+        padding-bottom: 24px;
     }
 
     #footer {
