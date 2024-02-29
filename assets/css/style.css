@@ -216,10 +216,11 @@ main>div {
 }
 
 .feature-card {
+    flex: 1 1 calc(33.33% - 20px);
     display: flex;
     /* Keeps the content aligned flexibly */
     padding: 10px;
-    min-height: 15rem;
+    min-height: 260px;
     /* Minimum height, but allows expansion based on flex properties */
     background-color: #20f8fcbb;
     border-radius: 40px;
@@ -228,6 +229,7 @@ main>div {
     box-sizing: border-box;
     /* Ensures padding is included in the width calculation */
     min-width: 250px;
+    align-items: stretch;
 }
 
 .feature-card i {
@@ -241,7 +243,7 @@ main>div {
 
 /* Format text within the feature cards*/
 .feature-card h2,
-p {
+.feature-card p {
     padding-top: 5px;
     color: #061033;
 }
@@ -416,7 +418,8 @@ p {
 }
 
 .plan-card {
-    position: relative; /* Add this to create a positioning context */
+    position: relative;
+    /* Add this to create a positioning context */
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -447,7 +450,8 @@ p {
     animation: rainbow-color 2s infinite;
 }
 
-.annual,.monthly{
+.annual,
+.monthly {
     padding-top: 40px;
 }
 
@@ -543,22 +547,30 @@ p {
 }
 
 /* Additional styles for toggle visibility */
-#toggle-starter:not(:checked) ~ .annual,#toggle-pro:not(:checked) ~ .annual{
+#toggle-starter:not(:checked)~.annual,
+#toggle-pro:not(:checked)~.annual {
     display: none;
 }
 
-#toggle-starter:checked ~ .monthly,#toggle-starter:checked ~ .rainbow,#toggle-pro:checked ~ .monthly,#toggle-pro:checked ~ .rainbow {
+#toggle-starter:checked~.monthly,
+#toggle-starter:checked~.rainbow,
+#toggle-pro:checked~.monthly,
+#toggle-pro:checked~.rainbow {
     display: none;
 }
 
-#toggle-starter:not(:checked) ~ .monthly,#toggle-pro:not(:checked) ~ .monthly {
+#toggle-starter:not(:checked)~.monthly,
+#toggle-pro:not(:checked)~.monthly {
     display: block;
 }
 
 /* Directly position toggle options and related elements */
-.toggle, .toggle-checkbox, .toggle-label {
+.toggle,
+.toggle-checkbox,
+.toggle-label {
     position: absolute;
-    top: 75px; /* Position 75px from the top of the plan-card */
+    top: 75px;
+    /* Position 75px from the top of the plan-card */
 }
 
 /* Ensure the toggle options, checkbox, and label are horizontally aligned */
@@ -570,32 +582,32 @@ p {
     column-count: 2;
 }
 
-.toggle-options{
+.toggle-options {
     padding-left: auto;
     padding-right: auto;
     padding-top: 2px;
 }
 
-.toggle-left{
+.toggle-left {
     padding-right: 25px;
     width: 50%;
     text-align: right;
 }
 
-.toggle-right{
+.toggle-right {
     padding-left: 25px;
     width: 50%;
 }
 
 .toggle-checkbox {
-    left: calc(50% - 17.5px); 
+    left: calc(50% - 17.5px);
 }
 
 .toggle-label {
-    left: calc(50% - 17.5px); 
+    left: calc(50% - 17.5px);
 }
 
-.free #included{
+.free #included {
     padding-top: 24px;
 }
 
@@ -709,7 +721,12 @@ p {
 }
 
 /* about page */
-#about p{
+#about p {
+    color: white;
+}
+
+/* support page */
+.faq p {
     color: white;
 }
 
@@ -984,7 +1001,8 @@ div.hover-shadow {
         min-height: 60vh;
     }
 
-    .annual,.monthly{
+    .annual,
+    .monthly {
         padding-top: 34.2px;
     }
 
@@ -1022,15 +1040,23 @@ div.hover-shadow {
 }
 
 @media screen and (min-width: 768px) {
-    .feature-card, .plan-card {
-        width: calc(50% - 20px);
+
+    .feature-card,
+    .plan-card {
+        flex-basis: calc(33% - 20px);
         /*Adjust based on the gap and number of items per row*/
         ;
+    }
+
+    .feature-card{
+        min-height: 280px;
     }
 }
 
 @media screen and (min-width: 1129px) {
-    .feature-card,.plan-card {
+
+    .feature-card,
+    .plan-card {
         width: calc(33% - 20px);
         /*Adjust based on the gap and number of items per row*/
         ;
