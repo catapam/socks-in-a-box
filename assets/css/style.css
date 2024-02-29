@@ -722,6 +722,18 @@ main>div {
     color: white;
 }
 
+#about h1 {
+    padding-top: 2rem ;
+    color: #fe0079;
+}
+
+#about li {
+    padding-top: 15px ;
+    line-height: 1.1;
+    font-family:'Comic Sans MS', sans-serif;
+    letter-spacing: 0;
+}
+
 /* support page */
 .accordion{
     font-size: 150%;
@@ -759,10 +771,6 @@ main>div {
 
 .answer{
     padding-top: 5px;
-}
-
-#support{
-    
 }
 
 /* footer */
