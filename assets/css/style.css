@@ -178,7 +178,7 @@ main>div {
 
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
-    background: linear-gradient(to right, #fe0079, #20f8fc);
+    background: linear-gradient(to right, #fe0079, #ee5f00);
     font-size: 130%;
     position: absolute;
     bottom: 40px;
@@ -187,10 +187,6 @@ main>div {
     padding-top: 20px;
     padding-left: 10px;
     border-radius: 0 40px 40px 0;
-}
-
-#cover-text h2 {
-    color: #061033;
 }
 
 .features {
@@ -461,6 +457,7 @@ main>div {
 
 .text-shaded {
     color: gray;
+    font-size: 60%;
 }
 
 #included {
@@ -484,7 +481,7 @@ main>div {
     font-family: 'Comic Sans MS', sans-serif;
     letter-spacing: 1px;
     font-size: 80%;
-    padding-top: 7px;
+    padding-top: 2%;
     line-height: 1.1;
 }
 
@@ -726,8 +723,46 @@ main>div {
 }
 
 /* support page */
+.accordion{
+    font-size: 150%;
+}
+
 .faq p {
     color: white;
+}
+
+.question{
+    display: none;
+}
+
+.answer{
+    display: none;
+}
+
+.question:checked ~ .answer{
+    display: block;
+}
+
+.faq-card{
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom, #fe0079, #ee5f00);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.faq-card h2, .faq-card p{
+    font-size: 70%;
+    letter-spacing: 1px;
+}
+
+.answer{
+    padding-top: 5px;
+}
+
+#support{
+    
 }
 
 /* footer */
