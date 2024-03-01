@@ -771,6 +771,10 @@ main>div {
     padding-top: 5px;
 }
 
+#support{
+    padding-bottom: 20px;
+}
+
 /* footer */
 footer {
     position: relative;
@@ -784,6 +788,7 @@ footer {
     /* Add padding for spacing */
     display: flex;
     bottom: 67.2px;
+    top: 0;
     left: 0;
     margin: 0;
     flex-direction: column;
@@ -794,7 +799,7 @@ footer {
     width: 100%;
     position: relative;
     flex-direction: column;
-    padding-bottom: 20%;
+    padding-bottom: 70px;
 }
 
 #description,
@@ -812,6 +817,7 @@ footer {
     padding-right: 15%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
 }
 
 #footer p {
@@ -1057,6 +1063,7 @@ div.hover-shadow {
         position: static;
         /* Ensure it flows with the content */
         bottom: auto;
+        padding-bottom: 5px;
         /* Reset any bottom alignment */
         left: auto;
         /* Reset any left alignment */
