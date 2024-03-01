@@ -16,7 +16,6 @@
 html,
 body {
     height: 100%;
-    overflow: auto;
 }
 
 /* Ensure no other styles are affecting the menu alignment */
@@ -376,7 +375,7 @@ main>div {
     /*Adjust based on the gap and number of items per row*/
     box-sizing: border-box;
     /* Ensures padding is included in the width calculation */
-    min-width: 150px;
+    min-width: 170px;
 }
 
 .testimonial-card h2 {
@@ -415,18 +414,16 @@ main>div {
 
 .plan-card {
     position: relative;
-    /* Add this to create a positioning context */
     display: flex;
     flex-direction: column;
     padding: 10px;
-    min-height: 60vh;
+    max-height: 395px;
     border-radius: 40px;
     width: 100%;
     border-color: #fe0079;
     border-style: solid;
     box-sizing: border-box;
     min-width: 250px;
-    /* Other styles remain unchanged */
 }
 
 .plan-card .title {
@@ -723,19 +720,19 @@ main>div {
 }
 
 #about h1 {
-    padding-top: 2rem ;
+    padding-top: 2rem;
     color: #fe0079;
 }
 
 #about li {
-    padding-top: 15px ;
+    padding-top: 15px;
     line-height: 1.1;
-    font-family:'Comic Sans MS', sans-serif;
+    font-family: 'Comic Sans MS', sans-serif;
     letter-spacing: 0;
 }
 
 /* support page */
-.accordion{
+.accordion {
     font-size: 150%;
 }
 
@@ -743,19 +740,19 @@ main>div {
     color: white;
 }
 
-.question{
+.question {
     display: none;
 }
 
-.answer{
+.answer {
     display: none;
 }
 
-.question:checked ~ .answer{
+.question:checked~.answer {
     display: block;
 }
 
-.faq-card{
+.faq-card {
     margin-top: 20px;
     background-image: linear-gradient(to bottom, #fe0079, #ee5f00);
     padding-left: 20px;
@@ -764,12 +761,13 @@ main>div {
     padding-bottom: 10px;
 }
 
-.faq-card h2, .faq-card p{
+.faq-card h2,
+.faq-card p {
     font-size: 70%;
     letter-spacing: 1px;
 }
 
-.answer{
+.answer {
     padding-top: 5px;
 }
 
@@ -796,6 +794,7 @@ footer {
     width: 100%;
     position: relative;
     flex-direction: column;
+    padding-bottom: 20%;
 }
 
 #description,
@@ -806,14 +805,13 @@ footer {
 }
 
 #main-footer {
-    background-image: #061033;
+    background-color: #061033;
     width: 100%;
-    color: 061033;
+    color: #061033;
     padding-left: 15%;
     padding-right: 15%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 2%;
 }
 
 #footer p {
@@ -1087,11 +1085,9 @@ div.hover-shadow {
     .feature-card,
     .plan-card {
         flex-basis: calc(33% - 20px);
-        /*Adjust based on the gap and number of items per row*/
-        ;
     }
 
-    .feature-card{
+    .feature-card {
         min-height: 280px;
     }
 }
@@ -1101,9 +1097,23 @@ div.hover-shadow {
     .feature-card,
     .plan-card {
         width: calc(33% - 20px);
-        /*Adjust based on the gap and number of items per row*/
-        ;
     }
+
+    .testimonial-section>.table {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .testimonial-card {
+        width: 22%;
+    }
+
+    .testimonial-section::after,
+    .testimonial-section::before {
+        background: transparent;
+    }
+
 
     .diagonal-top-left:hover {
         -webkit-transform: scale(1.01) skew(-0.3deg, -0.5deg);
