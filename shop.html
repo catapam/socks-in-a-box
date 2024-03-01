@@ -47,6 +47,7 @@
             </div>
         </section>
         <div id="shop" class="top-spacing">
+            <input type="checkbox" id="subscribeToggle" hidden>
             <div class="plan-table table top-spacing">
                 <div class="plan-card free grow">
                     <h1 class="title centered">Free</h1>
@@ -59,7 +60,7 @@
                         <li>Test app tools</li>
                     </ul>
                     <div class="spacer"></div>
-                    <button class="centered shakev grow" type="button">Start for Free</button>
+                    <label for="subscribeToggle" class="subscribe-btn centered shakev grow">Start for free</label>
                 </div>
                 <div class="plan-card grow">
                     <h1 class="title centered">Starter</h1>
@@ -81,7 +82,7 @@
                         <li>1 custom sock a month</li>
                     </ul>
                     <div class="spacer"></div>
-                    <button class="centered shakev grow" type="button">Subscribe</button>
+                    <label for="subscribeToggle" class="subscribe-btn centered shakev grow">Subscribe</label>
                 </div>
                 <div class="plan-card grow">
                     <h1 class="title centered">Pro</h1>
@@ -104,7 +105,41 @@
                         <li>Pack of Fun stickers</li>
                     </ul>
                     <div class="spacer"></div>
-                    <button class="centered shakev grow" type="button">Subscribe</button>
+                    <label for="subscribeToggle" class="subscribe-btn centered shakev grow">Subscribe</label>
+                </div>
+            </div>
+            <!-- Pop-up subscribe form -->
+            <div class="subscribe-popup">
+                <div class="subscribe-popup-body">
+                    <label for="subscribeToggle" class="subscribe-btn popup-close">X</label>
+                    <form class="subscribe-form" action="purchased.html">
+                        <!-- Form fields -->
+                        <p>Create your account</p>
+                        <div>
+                            <i class="fa-solid fa-user centered"></i>
+                            <label for="nick-name" class="sr-only">Nickname</label>
+                            <input type="text" name="nick-name" id="nick-name" placeholder="Nickname" required>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-at centered"></i>
+                            <label for="full-name" class="sr-only">Email address</label>
+                            <input type="email" name="email" id="email" placeholder="Email address" required>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-key centered"></i>
+                            <label for="pw" class="sr-only">Password</label>
+                            <input type="password" name="pw" id="pw" placeholder="Password" required></input>
+                        </div>
+                        <div class="check-form">
+                            <input form="subscribe-form" id="remember" name="remember" type="checkbox" checked>
+                            <label for="remember"><small>Remember me</small></label>
+                        </div>
+                        <div class="check-form">
+                            <input form="subscribe-form" id="receive" name="receive" type="checkbox" checked>
+                            <label for="receive"><small>Receive offers and promotions</small></label>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
             </div>
         </div>
