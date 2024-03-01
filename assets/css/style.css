@@ -513,11 +513,12 @@ main>div {
     z-index: 999;
     width: 100vw;
     height: 100vh;
-    background-color: #20f8fc53;
+    background-color: #06103363;
     justify-content: center;
     /* Center horizontally */
     align-items: center;
     /* Center vertically */
+    backdrop-filter: blur(2px);
 }
 
 .subscribe-popup-body {
@@ -599,13 +600,17 @@ main>div {
 }
 
 .subscribe-form button {
+    display: flex;
     background-color: #fe0079;
     color: #061033;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin: 10px 0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
 }
 
 /* toggle button for plan cards */
