@@ -52,11 +52,14 @@
 
         <!-- Plans section -->
         <div id="shop" class="top-spacing">
-            <!-- General checkbox used to trigger subscribe pop-up -->
-            <input type="radio" name="subscribeToggle" id="subscribeToggle-free" hidden>
-            <input type="radio" name="subscribeToggle" id="subscribeToggle-starter" hidden>
-            <input type="radio" name="subscribeToggle" id="subscribeToggle-pro" hidden>
-            <input type="radio" name="subscribeToggle" id="subscribeToggle-none" checked hidden>
+            <!-- General radio-checkbox used to trigger subscribe pop-up -->
+            <fieldset>
+                <legend hidden>Subscribe from this page</legend>
+                <input type="radio" name="subscribeToggle" id="subscribeToggle-free" hidden>
+                <input type="radio" name="subscribeToggle" id="subscribeToggle-starter" hidden>
+                <input type="radio" name="subscribeToggle" id="subscribeToggle-pro" hidden>
+                <input type="radio" name="subscribeToggle" id="subscribeToggle-none" checked hidden>
+            </fieldset> 
 
             <!-- plan table main element -->
             <div class="plan-table table top-spacing">
