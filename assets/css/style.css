@@ -774,6 +774,11 @@ main>div {
     /* Speed curve of the animation */
     animation-delay: 2s;
     /* Wait before starting the animation */
+    z-index: 1000;
+}
+
+.support-btn>p{
+    color: #061033;
 }
 
 /* Pop-up styles */
@@ -801,12 +806,12 @@ main>div {
     display: block;
 }
 
-/* Close button styles */
-.popup-close {
+#supportToggle:checked~.support-btn>i {
+    display: none;
+}
+
+#supportToggle:checked~.support-btn>p {
     display: block;
-    text-align: right;
-    cursor: pointer;
-    color: #061033;
 }
 
 /* Form styling */
