@@ -901,7 +901,7 @@ main>div {
     padding-bottom: 10px;
 }
 
-.faq-card h2,
+.faq-card label,
 .faq-card p {
     font-size: 70%;
     letter-spacing: 1px;
