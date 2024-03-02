@@ -308,7 +308,7 @@ main>div {
 }
 
 /* app mockup images */
-#app-mockup {
+#app-mockup-main, #app-mockup-custom {
     display: block;
     /* Makes the image a block-level element */
     max-height: 60vh;
