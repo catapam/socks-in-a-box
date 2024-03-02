@@ -551,12 +551,12 @@ main>div {
     left: calc(50% - 17.5px);
 }
 
-.free #included {
+.free .included {
     padding-top: 24px;
 }
 
 /* Rainbow offer for annual plan, only visible when toggle button is set to monthly */
-#offer {
+.offer {
     font-size: 85%;
     padding-top: 5px;
     animation: rainbow-color 2s infinite;
@@ -578,7 +578,7 @@ main>div {
 }
 
 /* What is included on the plan */
-#included {
+.included {
     margin-top: 20px;
     margin-bottom: 0;
     font-size: 100%;

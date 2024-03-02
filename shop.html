@@ -43,7 +43,7 @@
         <section>
             <div id="shop-hero">
                 <!-- Accessibility: Hidden heading for screen readers -->
-                <h1 class="hidden-heading">Hero image</h1>
+                <h2 class="hidden-heading">Hero image</h2>
                 <div id="cover-text">
                     <h2>Shop</h2>
                 </div>
@@ -62,7 +62,7 @@
                 <div class="plan-card free grow">
                     <h1 class="title centered">Free</h1>
                     <h2 class="pricing-card-price centered monthly">€ 0.00 <small class="text-shaded">/ mo</small></h2>
-                    <h3 id="included" class="centered">What is included:</h3>
+                    <h3 class="included centered">What is included:</h3>
                     <ul class="list-unstyled top-spacing">
                         <li>Create and Manage your Profile</li>
                         <li>Read Reviews</li>
@@ -85,9 +85,9 @@
                         <span class="sr-only">Billing cycle</span>
                     </label>
                     <h2 class="pricing-card-price centered monthly">€ 20.00 <small class="text-shaded">/ mo</small></h2>
-                    <h2 id="offer" class="centered rainbow">15% off on annual plan</h2>
+                    <h2 class="offer centered rainbow">15% off on annual plan</h2>
                     <h2 class="pricing-card-price centered annual">€ 204.00 <small class="text-shaded">/ y</small></h2>
-                    <h3 id="included" class="centered">What is included:</h3>
+                    <h3 class="included centered">What is included:</h3>
                     <ul class="list-unstyled top-spacing">
                         <li>All from Free plan</li>
                         <li>2 socks from the catalog a month</li>
@@ -109,9 +109,9 @@
                         <span class="sr-only">Billing cycle</span>
                     </label>
                     <h2 class="pricing-card-price centered monthly">€ 40.00 <small class="text-shaded">/ mo</small></h2>
-                    <h2 id="offer" class="centered rainbow">15% off on annual plan</h2>
+                    <h2 class="offer centered rainbow">15% off on annual plan</h2>
                     <h2 class="pricing-card-price centered annual">€ 408.00 <small class="text-shaded">/ y</small></h2>
-                    <h3 id="included" class="centered">What is included:</h3>
+                    <h3 class="included centered">What is included:</h3>
                     <ul class="list-unstyled top-spacing">
                         <li>All from Starter plan</li>
                         <li>+2 socks from the catalog a month</li>
@@ -137,23 +137,23 @@
                         </div>
                         <div>
                             <i class="fa-solid fa-at centered"></i>
-                            <label for="full-name" class="sr-only">Email address</label>
-                            <input type="email" name="email" id="email" placeholder="Email address" required>
+                            <label for="email-address" class="sr-only">Email address</label>
+                            <input type="email" name="email-address" id="email-address" placeholder="Email address" required>
                         </div>
                         <div>
                             <i class="fa-solid fa-key centered"></i>
                             <label for="pw" class="sr-only">Password</label>
-                            <input type="password" name="pw" id="pw" placeholder="Password" required></input>
+                            <input type="password" name="pw" id="pw" placeholder="Password" required>
                         </div>
                         <div class="check-form">
-                            <input form="subscribe-form" id="remember" name="remember" type="checkbox" checked>
+                            <input id="remember" name="remember" type="checkbox" checked>
                             <label for="remember"><small>Remember me</small></label>
                         </div>
                         <div class="check-form">
-                            <input form="subscribe-form" id="receive" name="receive" type="checkbox" checked>
+                            <input id="receive" name="receive" type="checkbox" checked>
                             <label for="receive"><small>Receive offers and promotions</small></label>
                         </div>
-                        <button type="subscribe" class="centered">Subscribe</button>
+                        <button type="submit" class="centered">Subscribe</button>
                     </form>
                 </div>
             </div>
