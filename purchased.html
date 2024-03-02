@@ -9,7 +9,6 @@
         content="Socks in a box, subscription club for fun socks lovers. Free delivery all across Europe.">
     <meta name="keywords"
         content="sock, socks, subscription, fun, box, club, gift, present, birthday, secret santa, xmas, christmas, friend gift">
-    <meta http-equiv="refresh" content="7; url=index.html">
     <title>Socks in a box</title>
     <!-- Favicon and touch icons for various platforms -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -21,6 +20,13 @@
 </head>
 
 <body>
+    <script>
+        // Redirect after 7 seconds
+        setTimeout(function () {
+            window.location.href = 'index.html';
+        }, 7000); // 7000 milliseconds = 7 seconds
+    </script>
+
     <header>
         <!-- Branding and navigation -->
         <ul id="brand">
@@ -53,7 +59,7 @@
         <div id="quick-support">
             <!-- Hidden checkbox to control the pop-up -->
             <input type="checkbox" id="supportToggle" hidden>
-            
+
             <!-- Support button label for the hidden checkbox -->
             <label for="supportToggle" class="support-btn">
                 <i class="fa-solid fa-headset"></i>
@@ -91,13 +97,15 @@
                     <p>Download the app right now!</p>
                     <div class="download">
                         <!-- Apple Badge -->
-                        <a href="https://www.apple.com/ie/ios/app-store/" rel="noopener noreferrer" target="_blank" aria-label="iOS badge">
+                        <a href="https://www.apple.com/ie/ios/app-store/" rel="noopener noreferrer" target="_blank"
+                            aria-label="iOS badge">
                             <img alt="iOS Download Link" class="download-badge"
                                 src="./assets/images/ios-app-store-badge.webp">
                         </a>
 
                         <!-- Android Badge -->
-                        <a href="https://play.google.com/store" rel="noopener noreferrer" target="_blank" aria-label="Android badge">
+                        <a href="https://play.google.com/store" rel="noopener noreferrer" target="_blank"
+                            aria-label="Android badge">
                             <img alt="Android Download Link" class="download-badge"
                                 src="./assets/images/google-play-badge.webp">
                         </a>
