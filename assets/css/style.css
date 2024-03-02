@@ -145,8 +145,7 @@ main>div {
 #shop-hero,
 #about-hero,
 #support-hero {
-    height: auto;
-    min-height: 90vh;
+    height: 90vh;
     width: 100vw;
     margin-top: 0;
     position: relative;
@@ -155,6 +154,7 @@ main>div {
     background-repeat: no-repeat;
     overflow: auto;
     z-index: 0;
+    max-height: 617px;
 }
 
 #hero {
