@@ -988,12 +988,24 @@ footer {
 /* Social networks section of footers */
 #social {
     padding-top: 3%;
+    width: 100%;
+}
+
+#social >div {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 #social a {
-    padding-left: 5%;
-    padding-right: 5%;
     color: #061033;
+    width: 33%;
+    min-width: 48px !important;
+    min-height: 48px !important;
+}
+
+#social a i{
+    font-size: 46px;
 }
 
 /* copyright fixed at the very botton of all pages  */
