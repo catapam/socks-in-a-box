@@ -464,6 +464,10 @@ main>div {
     transition: background-color 0.2s;
 }
 
+.toggle-label span{
+    color:#061033;
+}
+
 /* Style the toggle indicator */
 .toggle-label::before {
     content: "";
@@ -568,7 +572,7 @@ main>div {
 }
 
 .text-shaded {
-    color: gray;
+    color: rgb(194, 194, 194);
     font-size: 60%;
 }
 
@@ -618,6 +622,7 @@ main>div {
     bottom: 0;
     border-style: groove;
     border-color: #20f9fc;
+    color: #061033;
 }
 
 /* Subscribe Pop-up styles */
