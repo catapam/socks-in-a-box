@@ -409,17 +409,20 @@ main>div {
     /* Maintain aspect ratio */
 }
 
+/* hall of fame, this is changed on media queries for bigger screens */
 .hall_of_fame {
     line-height: 0;
     column-count: 2;
     gap: 0;
 }
 
-/* plan table */
+/* Shop page */
+/* plan table gap*/
 .plan-table {
     gap: 20px;
 }
 
+/* Plan cards setup */
 .plan-card {
     position: relative;
     display: flex;
@@ -439,186 +442,11 @@ main>div {
     padding-left: 0;
 }
 
+/* Toggle options text (monthly/annual) */
 .toggle-options {
     padding-left: 2%;
     padding-right: 2%;
     font-size: 70%;
-}
-
-#offer {
-    font-size: 85%;
-    padding-top: 5px;
-    animation: rainbow-color 2s infinite;
-}
-
-.annual,
-.monthly {
-    padding-top: 40px;
-}
-
-.annual {
-    padding-bottom: 21px;
-}
-
-.text-shaded {
-    color: gray;
-    font-size: 60%;
-}
-
-#included {
-    margin-top: 20px;
-    margin-bottom: 0;
-    font-size: 100%;
-    text-decoration: underline;
-}
-
-.plan-card ul {
-    margin-top: 0;
-    padding-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.plan-card li {
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none;
-    font-family: 'Comic Sans MS', sans-serif;
-    letter-spacing: 1px;
-    font-size: 80%;
-    padding-top: 2%;
-    line-height: 1.1;
-}
-
-.plan-card .spacer {
-    flex-grow: 1;
-}
-
-.plan-card>.subscribe-btn {
-    display: flex;
-    height: 40px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-    border-radius: 20px;
-    background-color: #fe0079;
-    font-family: 'Chewy';
-    font-size: 120%;
-    bottom: 0;
-    border-style: groove;
-    border-color: #20f9fc;
-}
-
-/* Pop-up styles */
-.subscribe-popup {
-    display: none;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100vw;
-    height: 100vh;
-    background-color: #06103363;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
-    backdrop-filter: blur(2px);
-}
-
-.subscribe-popup-body {
-    position: relative;
-    padding: 30px;
-    margin: auto;
-    background-color: white;
-    border-radius: 15px;
-    width: 80%;
-    height: 350px;
-}
-
-.subscribe-popup-body .popup-close {
-    width: 15px;
-    float: right;
-}
-
-.subscribe-popup-body p {
-    top: 0;
-    position: relative;
-    color: #fe0079;
-    font-family: 'Chewy', sans-serif;
-    padding-bottom: 20px;
-    margin-right: 25px;
-}
-
-.subscribe-popup-body input{
-    color: #061033;
-}
-
-.subscribe-form >div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.subscribe-form >div > i {
-    width: 36px;
-    height: 36px;
-    color: #061033;
-    padding-top: 10px;
-    margin-left: -5px;
-}
-
-.check-form {
-    display: flex;
-    flex-direction: row;
-    margin-left: 0;
-    /* Adjusts if there's unwanted space to the left */
-    vertical-align: middle;
-    /* Aligns checkbox and label text vertically if needed */
-    padding-bottom: 5px;
-}
-
-.check-form small {
-    color: #061033;
-    padding-left: 5px;
-}
-
-.check-form input {
-    margin: 0 !important;
-    width: 20px !important;
-    padding: 1px !important;
-}
-
-/* Show pop-up when checkbox is checked */
-#subscribeToggle:checked~.subscribe-popup {
-    display: flex;
-}
-
-/* Form styling */
-.subscribe-form input,
-.subscribe-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #061033;
-}
-
-.subscribe-form button {
-    display: flex;
-    background-color: #fe0079;
-    color: #061033;
-    padding: 10px 20px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
 }
 
 /* toggle button for plan cards */
@@ -725,6 +553,194 @@ main>div {
 
 .free #included {
     padding-top: 24px;
+}
+
+/* Rainbow offer for annual plan, only visible when toggle button is set to monthly */
+#offer {
+    font-size: 85%;
+    padding-top: 5px;
+    animation: rainbow-color 2s infinite;
+}
+
+/* Price options */
+.annual,
+.monthly {
+    padding-top: 40px;
+}
+
+.annual {
+    padding-bottom: 21px;
+}
+
+.text-shaded {
+    color: gray;
+    font-size: 60%;
+}
+
+/* What is included on the plan */
+#included {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 100%;
+    text-decoration: underline;
+}
+
+.plan-card ul {
+    margin-top: 0;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plan-card li {
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    font-family: 'Comic Sans MS', sans-serif;
+    letter-spacing: 1px;
+    font-size: 80%;
+    padding-top: 2%;
+    line-height: 1.1;
+}
+
+/* Spacer to make the subscribe button aligned and even card height */
+.plan-card .spacer {
+    flex-grow: 1;
+}
+
+/* Subscribe button */
+.plan-card>.subscribe-btn {
+    display: flex;
+    height: 40px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    background-color: #fe0079;
+    font-family: 'Chewy';
+    font-size: 120%;
+    bottom: 0;
+    border-style: groove;
+    border-color: #20f9fc;
+}
+
+/* Subscribe Pop-up styles */
+.subscribe-popup {
+    display: none;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background-color: #06103363;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    backdrop-filter: blur(2px);
+    /* Blur the background around the main pop-up element */
+}
+
+/* Body of subscribe pop-up window */
+.subscribe-popup-body {
+    position: relative;
+    padding: 30px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;
+    height: 350px;
+}
+
+/* Subscribe pop-up closing button */
+.subscribe-popup-body .popup-close {
+    width: 15px;
+    float: right;
+}
+
+/* Create your account Title */
+.subscribe-popup-body p {
+    top: 0;
+    position: relative;
+    color: #fe0079;
+    font-family: 'Chewy', sans-serif;
+    padding-bottom: 20px;
+    margin-right: 25px;
+}
+
+/* Text color for inputs */
+.subscribe-popup-body input {
+    color: #061033;
+}
+
+/* flex to make icons show before the input areas of the form */
+.subscribe-form>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Descriptive icons */
+.subscribe-form>div>i {
+    width: 36px;
+    height: 36px;
+    color: #061033;
+    padding-top: 10px;
+    margin-left: -5px;
+}
+
+/* Checkboxes 'remember me' and 'receive offers'  */
+.check-form {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+/* Text of the checkboxes */
+.check-form small {
+    color: #061033;
+    padding-left: 5px;
+}
+
+.check-form input {
+    margin: 0 !important;
+    width: 20px !important;
+    padding: 1px !important;
+}
+
+/* Show pop-up when checkbox is checked */
+#subscribeToggle:checked~.subscribe-popup {
+    display: flex;
+}
+
+/* Form styling */
+.subscribe-form input,
+.subscribe-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #061033;
+}
+
+.subscribe-form button {
+    display: flex;
+    background-color: #fe0079;
+    color: #061033;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
 }
 
 /* Quick support button */
@@ -854,6 +870,7 @@ main>div {
 }
 
 /* support page */
+/* accordion */
 .accordion {
     font-size: 150%;
 }
@@ -874,6 +891,7 @@ main>div {
     display: block;
 }
 
+/* faq accordion cards */
 .faq-card {
     margin-top: 20px;
     background-image: linear-gradient(to bottom, #fe0079, #ee5f00);
@@ -893,6 +911,7 @@ main>div {
     padding-top: 5px;
 }
 
+/* support form */
 #support {
     padding-bottom: 20px;
 }
@@ -916,6 +935,7 @@ footer {
     flex-direction: column;
 }
 
+/* Footer fixed to the botton of the pages */
 #footer {
     padding-top: 0;
     width: 100%;
@@ -946,6 +966,43 @@ footer {
     color: #ffffff;
 }
 
+/* Socks in a box description fixed to footers */
+#description,
+#download-footer {
+    text-align: center;
+    width: 100%;
+}
+
+#description {
+    display: flex;
+    justify-content: left;
+    font-size: 80%;
+}
+
+/* Download badges fixed on the footers */
+#download-footer {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    flex-direction: column;
+}
+
+#download-footer>p {
+    padding-top: 10%;
+}
+
+/* Social networks section of footers */
+#social {
+    padding-top: 3%;
+}
+
+#social a {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #061033;
+}
+
+/* copyright fixed at the very botton of all pages  */
 #copyright {
     padding-top: 0;
     background-color: #061033;
@@ -967,39 +1024,7 @@ footer {
     text-align: center;
 }
 
-#description,
-#download-footer {
-    text-align: center;
-    width: 100%;
-}
-
-#description {
-    display: flex;
-    justify-content: left;
-    font-size: 80%;
-}
-
-#download-footer {
-    display: flex;
-    align-items: center;
-    min-height: 40px;
-    flex-direction: column;
-}
-
-#download-footer>p {
-    padding-top: 10%;
-}
-
-#social {
-    padding-top: 3%;
-}
-
-#social a {
-    padding-left: 5%;
-    padding-right: 5%;
-    color: #061033;
-}
-
+/* Mobile menu fixed to bottom of screen (only visible on mobile screens) */
 #menu-mobile {
     list-style: none;
     margin: 0;
@@ -1280,6 +1305,7 @@ div.hover-shadow {
     }
 }
 
+/* keyframes creating animations on all pages */
 @keyframes pulseAnimation {
 
     0%,
@@ -1335,29 +1361,21 @@ div.hover-shadow {
 }
 
 @keyframes rainbow-color {
-    0% {
-        color: #20f9fc;
-    }
 
-    /* Cyan */
-    25% {
-        color: #ffbd00;
-    }
-
-    /* Yellow */
-    50% {
-        color: #fe0079;
-    }
-
-    /* Magenta */
-    75% {
-        color: #ee5f00;
-    }
-
-    /* Orange */
+    0%,
     100% {
         color: #20f9fc;
     }
 
-    /* Back to Cyan */
+    25% {
+        color: #ffbd00;
+    }
+
+    50% {
+        color: #fe0079;
+    }
+
+    75% {
+        color: #ee5f00;
+    }
 }
