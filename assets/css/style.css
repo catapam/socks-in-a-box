@@ -777,8 +777,9 @@ main>div {
     z-index: 1000;
 }
 
-.support-btn>p{
+.support-btn #close{
     color: #061033;
+    display: none;
 }
 
 /* Pop-up styles */
@@ -810,7 +811,7 @@ main>div {
     display: none;
 }
 
-#supportToggle:checked~.support-btn>p {
+#supportToggle:checked~.support-btn #close {
     display: block;
 }
 
