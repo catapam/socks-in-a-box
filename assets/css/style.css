@@ -660,6 +660,7 @@ main>div {
 .subscribe-popup-body .popup-close {
     width: 15px;
     float: right;
+    color: #061033;
 }
 
 /* Create your account Title */
@@ -715,7 +716,11 @@ main>div {
 }
 
 /* Show pop-up when checkbox is checked */
-#subscribeToggle:checked~.subscribe-popup {
+#subscribeToggle-none:checked~.subscribe-popup {
+    display: none;
+}
+
+#subscribeToggle-free:checked~.subscribe-popup,#subscribeToggle-starter:checked~.subscribe-popup,#subscribeToggle-pro:checked~.subscribe-popup {
     display: flex;
 }
 

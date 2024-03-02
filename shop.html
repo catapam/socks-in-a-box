@@ -53,7 +53,10 @@
         <!-- Plans section -->
         <div id="shop" class="top-spacing">
             <!-- General checkbox used to trigger subscribe pop-up -->
-            <input type="checkbox" id="subscribeToggle" hidden>
+            <input type="radio" name="subscribeToggle" id="subscribeToggle-free" hidden>
+            <input type="radio" name="subscribeToggle" id="subscribeToggle-starter" hidden>
+            <input type="radio" name="subscribeToggle" id="subscribeToggle-pro" hidden>
+            <input type="radio" name="subscribeToggle" id="subscribeToggle-none" checked hidden>
 
             <!-- plan table main element -->
             <div class="plan-table table top-spacing">
@@ -70,7 +73,7 @@
                         <li>Test app tools</li>
                     </ul>
                     <div class="spacer"></div>
-                    <label for="subscribeToggle" class="subscribe-btn centered shakev grow">Start for free</label>
+                    <label for="subscribeToggle-free" class="subscribe-btn centered shakev grow">Start for free</label>
                 </div>
 
                 <!-- Starter plan -->
@@ -94,7 +97,7 @@
                         <li>1 custom sock a month</li>
                     </ul>
                     <div class="spacer"></div>
-                    <label for="subscribeToggle" class="subscribe-btn centered shakev grow">Subscribe</label>
+                    <label for="subscribeToggle-starter" class="subscribe-btn centered shakev grow">Subscribe</label>
                 </div>
 
                 <!-- Pro plan -->
@@ -119,14 +122,14 @@
                         <li>Pack of Fun stickers</li>
                     </ul>
                     <div class="spacer"></div>
-                    <label for="subscribeToggle" class="subscribe-btn centered shakev grow">Subscribe</label>
+                    <label for="subscribeToggle-pro" class="subscribe-btn centered shakev grow">Subscribe</label>
                 </div>
             </div>
             
             <!-- Pop-up subscribe form -->
             <div class="subscribe-popup">
                 <div class="subscribe-popup-body">
-                    <label for="subscribeToggle" class="subscribe-btn popup-close">X</label>
+                    <label for="subscribeToggle-none" class="subscribe-btn popup-close">X</label>
                     <form class="subscribe-form" action="purchased.html">
                         <!-- Form fields -->
                         <p>Create your account</p>
