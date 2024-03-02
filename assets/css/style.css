@@ -58,9 +58,6 @@ p {
 
 .sr-only {
     border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
-    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -527,8 +524,6 @@ main>div {
 }
 
 .toggle-options {
-    padding-left: auto;
-    padding-right: auto;
     padding-top: 2px;
 }
 
@@ -954,7 +949,6 @@ footer {
 #main-footer {
     background-color: #061033;
     width: 100%;
-    color: #061033;
     padding-left: 15%;
     padding-right: 15%;
     display: flex;
@@ -1074,14 +1068,10 @@ footer {
 
 /* Hover effects */
 .grow {
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
 .grow:hover {
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
     transform: scale(1.01);
 }
 
@@ -1274,29 +1264,18 @@ div.hover-shadow {
 
 
     .diagonal-top-left:hover {
-        -webkit-transform: scale(1.01) skew(-0.3deg, -0.5deg);
-        /* Chrome, Safari, Opera */
-        -ms-transform: scale(1.01) skew(-0.3deg, -0.5deg);
-        /* IE 9 */
         transform: scale(1.01) skew(-0.3deg, -0.5deg);
-        /* Standard syntax */
     }
 
     .diagonal-top-right:hover {
-        -webkit-transform: scale(1.01) skew(0.3deg, 0.5deg);
-        -ms-transform: scale(1.01) skew(0.3deg, 0.5deg);
         transform: scale(1.01) skew(0.3deg, 0.5deg);
     }
 
     .diagonal-bottom-left:hover {
-        -webkit-transform: scale(1.01) skew(-0.3deg, 0.5deg);
-        -ms-transform: scale(1.01) skew(-0.3deg, 0.5deg);
         transform: scale(1.01) skew(-0.3deg, 0.5deg);
     }
 
     .diagonal-bottom-right:hover {
-        -webkit-transform: scale(1.01) skew(0.3deg, -0.5deg);
-        -ms-transform: scale(1.01) skew(0.3deg, -0.5deg);
         transform: scale(1.01) skew(0.3deg, -0.5deg);
     }
 
