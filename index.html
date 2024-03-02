@@ -265,17 +265,17 @@
         <!-- Quick support popup trigger -->
         <div id="quick-support">
             <!-- Hidden checkbox to control the pop-up -->
-            <input type="checkbox" id="supportToggle" hidden aria-labelledby="supportBtnLabel supportCloseLabel">
-
+            <input type="checkbox" id="supportToggle" hidden>
+            
             <!-- Support button label for the hidden checkbox -->
-            <label class="support-btn" id="supportBtnLabel">
+            <label for="supportToggle" class="support-btn">
                 <i class="fa-solid fa-headset"></i>
                 <span class="sr-only">Support</span>
             </label>
 
             <!-- Pop-up form -->
             <div class="support-popup">
-                <label class="popup-close" id="supportCloseLabel">Close</label>
+                <label for="supportToggle" class="popup-close" hidden>Close</label>
                 <form class="support-form" action="thankyou.html">
                     <!-- Form fields -->
                     <p>How can we assist you?</p>
