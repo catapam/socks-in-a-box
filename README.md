@@ -21,6 +21,7 @@ A site of a subscription club for fun socks delivered monthly. The idea is to de
             * [Header](#header)
             * [Main menu](#main-menu)
             * [Footer](#footer)
+            * [Quick support button](#quick-support-button)
         * [Home page](#home-page)
     * [Future features](#future-features)
 * [Technology used](#technology-used)
@@ -150,10 +151,21 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 
 ![footer-desktop screenshot](documentation/footer-desktop.png)
 
+#### Quick support button
+* A button fixed to all pages (except support page) is shown at the bottom-right corner, this button has an animatioon that pulses it twice every now and again, calling the attention to user to use the button if necesary. That can be used in the future as a sale trigger.
+<br>
+
+![quick-support screenshot](documentation/quick-support.png)
+
+* When clicked the button opens a pop-up of the support form:
+<br>
+![quick-support-popup screenshot](documentation/quick-support-popup.png)
+
 ### Home page
 
 ## Future features
-* Membership login backend to access and manage the account same way as the mockup app advertises. 
+* Membership login backend to access and manage the account same way as the mockup app advertises.
+* Quick support button works as a sale trigger, offering quick contact with sales team.
 
 # Technology used
 ## Language
@@ -251,8 +263,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 * [ChatGPT](https://chat.openai.com/) was used for text reviews and copywritting0
 
 ## README
-* (Mario Gusman - Bookdrops - README)[https://github.com/mariogusman/bookdrops/blob/main/README.md] was used as reference for the README structure
-* (Saziosu - Harmony Pilates - README)[https://github.com/saziosu/harmony-pilates/blob/main/README.md] was used as reference for the README structure
+* [Mario Gusman - Bookdrops - README](https://github.com/mariogusman/bookdrops/blob/main/README.md) was used as reference for the README structure
+* [Saziosu - Harmony Pilates - README](https://github.com/saziosu/harmony-pilates/blob/main/README.md) was used as reference for the README structure
 
 # Acknowledgements
 - Gareth Mc Girr my mentor, for all the help and advice throughout the project
