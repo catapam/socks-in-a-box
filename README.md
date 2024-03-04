@@ -16,16 +16,25 @@ A site of a subscription club for fun socks delivered monthly. The idea is to de
     * [Images](#images)
     * [Wireframes](#wireframes)
 * [Features](#features)
-    * [Main page tempalte](#main-page-template)
-        * [Header](#header)
-        * [Main menu](#main-menu)
-        * [Footer](#footer)
-    * [Home page](#home-page)
+    * [Existing features](#existing-features)
+        * [Main page tempalte](#main-page-template)
+            * [Header](#header)
+            * [Main menu](#main-menu)
+            * [Footer](#footer)
+        * [Home page](#home-page)
+    * [Future features](#future-features)
 * [Technology used](#technology-used)
     * [Language](#language)
     * [Frameworks, Libraries & Programs](#frameworks-libraries--programs)
 * [Deployment](#deployment)
 * [Testing](#testing)
+    * [Home](#home)
+    * [About](#about)
+    * [Shop](#shop)
+    * [Support](#support)
+    * [Thank you](#thank-you)
+    * [Purchased](#purchased)
+    * [404](#404)
 * [Credits](#credits)
     * [Code](#code)
     * [Content](#content)
@@ -101,11 +110,12 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 * The site's logo was created on [Microsoft Copilot](https://copilot.microsoft.com/), and editted in Canva adding the text, and removing unwanted elements.
 
 ## Wireframes
----
+--- Needed?
 
 # Features
-## Main page template
-### Header
+## Existing features
+### Main page template
+#### Header
 * The header has the logo at the very left corner, followed by the brand name;
 * At the very right corner the Main menu is visible;
 * The header is only visible in screens bigger than 576px;
@@ -115,7 +125,7 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 
 ![header screenshot](documentation/header.png)
 
-### Main menu
+#### Main menu
 * The main menu varies in location and behavior depending on width of the screen.
 * The default menu is set for mobile versions on screens up to 576px wide, that menu is located at the very bottom of the screen and always fixed to that location. Bringing the same feeling of the mockup app images. Intuitive icons were used to translate the destination page.
 <br>
@@ -130,10 +140,20 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 
 * Both menus show the same pages in the a same order for a better User experience and when pages are active they mark the page by changing the menu color to #fe0079.
 
-### Footer
+#### Footer
+* On mobile version the menu is moved to the footer and changes from text to icons
+* The footer presents a breaf description of what Socks in a box is, links to download the apps: iOS and Android versions, the links for social medias and a Copyright watermark at the very bottom:
+<br>
 
+![footer-mobile screenshot](documentation/footer-mobile.png)
+<br>
 
-## Home page
+![footer-desktop screenshot](documentation/footer-desktop.png)
+
+### Home page
+
+## Future features
+* Membership login backend to access and manage the account same way as the mockup app advertises. 
 
 # Technology used
 ## Language
@@ -174,9 +194,54 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en-US)
 
 ## Home
-* HTML validation:
-[W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Findex.html) 
-* 
+* [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Findex.html)
+* [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/index.html)
+* Lighthouse result for mobile version:
+
+* Lighthouse result for desktop version:
+
+## About
+* [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fabout.html)
+* [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/about.html)
+* Lighthouse result for mobile version:
+
+* Lighthouse result for desktop version:
+
+## Shop
+* [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fshop.html)
+* [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/shop.html)
+* Lighthouse result for mobile version:
+
+* Lighthouse result for desktop version:
+
+## Support
+* [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fsupport.html) 
+* [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/support.html)
+* Lighthouse result for mobile version:
+
+* Lighthouse result for desktop version:
+
+## Thank you
+* [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fthankyou.html) 
+* [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/thankyou.html)
+* Lighthouse result for mobile version:
+
+* Lighthouse result for desktop version:
+
+## Purchased
+* [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fpurchased.html) 
+* [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/purchased.html)
+* Lighthouse result for mobile version:
+
+* Lighthouse result for desktop version:
+
+## 404
+* [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2F404.html) 
+* [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/404.html)
+* Lighthouse result for mobile version:
+
+* Lighthouse result for desktop version:
+
 
 # Credits
 ## Code
@@ -190,4 +255,5 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 * (Saziosu - Harmony Pilates - README)[https://github.com/saziosu/harmony-pilates/blob/main/README.md] was used as reference for the README structure
 
 # Acknowledgements
-Gareth Mc Girr my mentor, for all the help and advice throughout the project
+- Gareth Mc Girr my mentor, for all the help and advice throughout the project
+- Code Institute for all the training and guidance
