@@ -1,39 +1,57 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Socks in a Box
 
-Welcome,
+[Live project can be viewed here](https://catapam.github.io/socks-in-a-box/)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+A site of a subscription club for fun socks delivered monthly. The idea is to deliver a landing page with full understanding of how the business works, how the business was born and why, page to sign up for the available plans and support.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+![amiresponsive screenshot](documentation/responsive.png)
 
-## Codeanywhere Reminders
+# Table of Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+* [User Experience](#user-experience)
 
-`python3 -m http.server`
+# User Experience
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+The goal on this was to be fun and match the tone the brand and business concept states.
+<br>
+In order to achieve that psychodelic colors were choosen as Palette and images that bring those same color and sentiment were developed.
+<br>
+The top menu is alive and gives feedback to the user when hoovered and/or clicked, showing were the user is at that exact moment by setting a different color to the page name on the menu. That menu is only visible on bigger screens, while it's substituted by a App style menu at the bottom of the screen, which also mark the page by changin icon colors. Both menus are always fixed, so user don't need to scroll to navigate to other pages.
+<br>
+The main content of home page also has some hover effects to bring the FUN sentiment set as main tone of the site, that same concept is brought to the Shop page, while About is more sober and focused in storytelling, and Support page focus in bringing the fun sentiment through colors and a easy going FAQ section.
+<br>
+All hero images have 3 different sizes, and media queries swapt between them to offer a better performance on all devices.
+<br>
+A quick support button is always fixed at the bottom-right corner of all pages (except support page), so user don't need to navigate to support page if they need to contact the team quickly.
+<br>
+Support form is added to the body of Support page, after the FAQ section, while the quick support button is removed. That is intentional to make the users check FAQ section before submitting a form on that page.
+<br>
+Submitting a support forms, will redirect the user to a 'Thank you' page, which will be visible for 7 seconds before automatically redirecting the user back to home page.
+<br>
+Shop page has a toggle where user can switch between annual and monthly plan, toggling it gives the user feedback changing the price the billing cycle and removing the offer if 'Annual' is selected.
+<br>
+Clicking on the subscribe buttons from shop page, open a pop-up, with blurred background, to keep the user focused on that form while creating their account. Once the form is submitted, the user is redirected to a 'Welcome' page, with instructions on how to access the account and download the app, which will be visible for 7 seconds before automatically redirecting the user back to home page. 
+<br>
+Accessing non-existent pages will throw a custom 404 error page which allows navigation using the default menus, or will automatically redirect the user back to home page after 7 seconds.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## User stories
 
-`http_server`
+* First Time User
+    * As a first time user, we want to understand the product, navigate easily and intuitivelly through the site;
+    * As a first time user, we want a first contact with the community checking testimonials and gallery;
+    * As a first time user, we want to have access to the app and see how it works before subscribing to the service;
+    * As a first time user, we want to have easy access to the shop page, account creation and support.
+* Returning User
+    * As a returning user, we want to have easy buttons to download the app
+    * As a returning user, we want to reach to support without having to navigate to any other pages
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Design
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Color scheme
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* The color scheme was created based on initial image concepts generated by [Dall-e AI by ChatGPT](https://openai.com/dall-e-3);
+* My script to the AI was to generate psychodelic images of socks rainning above a city, something similar to the current hero image on the site. The colors used were shades of Pink, dark blue, cian, yellow and orange.
+* The final choice was made in [Canva](https://www.canva.com/) during the logo creation and later added to [Coolors](https://coolors.co/) to create the palette:
 
-To log into the Heroku toolbelt CLI:
+![coolors screenshot](documentation/palette.png)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
