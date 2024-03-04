@@ -25,6 +25,12 @@ A site of a subscription club for fun socks delivered monthly. The idea is to de
     * [Language](#language)
     * [Frameworks, Libraries & Programs](#frameworks-libraries--programs)
 * [Deployment](#deployment)
+* [Testing](#testing)
+* [Credits](#credits)
+    * [Code](#code)
+    * [Content](#content)
+    * [README](#readme)
+* [Acknowledgements](#acknowledgements)
 
 # User Experience
 
@@ -105,15 +111,25 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 * The header is only visible in screens bigger than 576px;
 * All header elements show animation when hoovered above;
 * The brand name redirects back to home page, a wide concept used in most sites, which brings some familiar behaviors to the end user.
+<br>
+
 ![header screenshot](documentation/header.png)
+
 ### Main menu
 * The main menu varies in location and behavior depending on width of the screen.
 * The default menu is set for mobile versions on screens up to 576px wide, that menu is located at the very bottom of the screen and always fixed to that location. Bringing the same feeling of the mockup app images. Intuitive icons were used to translate the destination page.
+<br>
+
 ![menu01 screenshot](documentation/menu01.png)
+
 * Menu for bigger screens is set on the media queries, for screens bigger than 576px wide. This menu will change to color #20F9FC 
  and present a lateral shake animation when hoovered above:
+<br>
+
 ![menu02 screenshot](documentation/menu02.png)
+
 * Both menus show the same pages in the a same order for a better User experience and when pages are active they mark the page by changing the menu color to #fe0079.
+
 ### Footer
 
 
@@ -149,13 +165,29 @@ GitHub pages was used to deploy this site:
 6. The site has been deployed on clicking save, this can take a few moments to generate the live link at the top of the settings page.
 
 # Testing
+- Testing was mainly made using Google Chrome Developer Tools, including the mobile and responsive views.
+- Lighthouse tab of developer tools was used to score the site regarding Performance, Acessibility and SEO.
+- Forms were tested by posting data to Code Institute's formdump at first and then updated to redirect to the thankyou and purchased pages.
+- The site was tested on other devices using Edge, Firefox and Safari. When testing on desktops with OS: Mac iOS and Windows 11. And on mobile OS: Android and iOS.
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors in the project.
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en-US)
+
+## Home
+* HTML validation:
+[W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Findex.html) 
+* 
 
 # Credits
 ## Code
 * [Mozilla CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) was a big player on development of the site styles, animations and behavior. Where examples were used as reference for initial coding and adaptations made according to the documentation the site provides.
 
 ## Content
-* [ChatGPT](https://chat.openai.com/) was used for text reviews and copywritting
+* [ChatGPT](https://chat.openai.com/) was used for text reviews and copywritting0
+
+## README
+* (Mario Gusman - Bookdrops - README)[https://github.com/mariogusman/bookdrops/blob/main/README.md] was used as reference for the README structure
+* (Saziosu - Harmony Pilates - README)[https://github.com/saziosu/harmony-pilates/blob/main/README.md] was used as reference for the README structure
 
 # Acknowledgements
 Gareth Mc Girr my mentor, for all the help and advice throughout the project
