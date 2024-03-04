@@ -16,11 +16,15 @@ A site of a subscription club for fun socks delivered monthly. The idea is to de
     * [Images](#images)
     * [Wireframes](#wireframes)
 * [Features](#features)
-    * [Languages Used](#languages-used)
-    * [Existing features](#existing-features)
+    * [Main page tempalte](#main-page-template)
         * [Header](#header)
         * [Main menu](#main-menu)
-        * [Home page](#home-page)
+        * [Footer](#footer)
+    * [Home page](#home-page)
+* [Technology used](#technology-used)
+    * [Language](#language)
+    * [Frameworks, Libraries & Programs](#frameworks-libraries--programs)
+* [Deployment](#deployment)
 
 # User Experience
 
@@ -94,13 +98,7 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 ---
 
 # Features
-
-## Languages used
-* HTML
-* CSS
-* JavaScript, minimal usage
-
-## Existing features
+## Main page template
 ### Header
 * The header has the logo at the very left corner, followed by the brand name;
 * At the very right corner the Main menu is visible;
@@ -116,9 +114,48 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
  and present a lateral shake animation when hoovered above:
 ![menu02 screenshot](documentation/menu02.png)
 * Both menus show the same pages in the a same order for a better User experience and when pages are active they mark the page by changing the menu color to #fe0079.
-### Home page
+### Footer
 
 
+## Home page
 
+# Technology used
+## Language
+* HTML
+* CSS
+* JavaScript, minimal usage
 
+## Frameworks, Libraries & Programs
+* [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes to plan out the website.
+* [GoogleFonts](https://fonts.google.com/) were used to import the font
+* [FontAwesome](https://fontawesome.com/) was used to pick the social icons
+* [Coolors](https://coolors.co/) was used to to pick the color palette
+* [Git](https://git-scm.com/) was used for version control
+* [Gitpod](https://gitpod.io/) was used to write the code
+* [GitHub](https://github.com/) was used to deploy the site code
+* [AmIResponsive](https://ui.dev/amiresponsive) was used to create the cross device responsivity images
+* [Microsoft Copilot](https://copilot.microsoft.com/), [Canva](https://www.canva.com/) and [Dall-e AI by ChatGPT](https://openai.com/dall-e-3) were used for images creation
+* [ChatGPT](https://chat.openai.com/) was used for text reviews and copywritting
 
+# Deployment
+
+GitHub pages was used to deploy this site:
+
+1. Login (or signup) to Github.
+2. Go to the repo for the project, [catapam/socks-in-a-box](https://github.com/catapam/socks-in-a-box).
+3. Click the settings button.
+4. Select pages on the left navigation menu.
+5. From the source dropdown select main branch and click save next to it.
+6. The site has been deployed on clicking save, this can take a few moments to generate the live link at the top of the settings page.
+
+# Testing
+
+# Credits
+## Code
+* [Mozilla CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) was a big player on development of the site styles, animations and behavior. Where examples were used as reference for initial coding and adaptations made according to the documentation the site provides.
+
+## Content
+* [ChatGPT](https://chat.openai.com/) was used for text reviews and copywritting
+
+# Acknowledgements
+Gareth Mc Girr my mentor, for all the help and advice throughout the project
