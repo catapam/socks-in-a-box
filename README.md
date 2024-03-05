@@ -28,11 +28,22 @@ A site of a subscription club for fun socks delivered monthly. The idea is to de
             * [Account management](#account-management)
             * [Testimonials](#testimonials)
             * [Hall of fame](#hall-of-fame)
-        * [About](#about-1)
+        * [About](#about)
             * [Hero journey](#hero-journey)
             * [The hero story](#the-hero-story)
             * [Why should I stay here?](#why-should-i-stay-here)
             * [Call for action](#call-for-action)
+        * [Shop](#shop)
+            * [Hero image](#hero-image)
+            * [Shop](#shop-1)
+            * [Subscribe](#subscribe)
+        * [Support](#support)
+            * [Support hero](#support-hero)
+            * [FAQ](#faq)
+            * [Support form](#support-form)
+        * [Purchased](#purchased)
+        * [Thank you](#thank-you)
+        * [404](#404)
     * [Future features](#future-features)
 * [Technology used](#technology-used)
     * [Language](#language)
@@ -40,12 +51,12 @@ A site of a subscription club for fun socks delivered monthly. The idea is to de
 * [Deployment](#deployment)
 * [Testing](#testing)
     * [Home](#home)
-    * [About](#about)
-    * [Shop](#shop)
-    * [Support](#support)
-    * [Thank you](#thank-you)
-    * [Purchased](#purchased)
-    * [404](#404)
+    * [About](#about-1)
+    * [Shop](#shop-1)
+    * [Support](#support-1)
+    * [Thank you](#thank-you-1)
+    * [Purchased](#purchased-1)
+    * [404](#404-1)
     * [Future improvements](#future-improvements)
 * [Credits](#credits)
     * [Code](#code)
@@ -172,9 +183,13 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 <br>
 
 ![quick-support-popup screenshot](documentation/quick-support-popup.png)
+<br>
+
+* All fields are required on the form, and responsive in case invalid data is inserted.
+* Once submitted, the form will redirect to thankyou.html page.
 
 ### Home page
-## Landing page
+#### Landing page
 * The hero image shows a rain of colorfull fun socks with variations of the color scheme of the site, the rain drops over a city at night, bringing the feeling of a rainy-night confort.
 * At the center of the hero image there is an iception of the brand logo.
 <br>
@@ -184,7 +199,7 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 
 ![landing-page-mobile screenshot](documentation/landing-page-mobile.png)
 
-## Features section
+#### Features section
 * The features section brings 6 cards with the main features of the product.
 <br>
 
@@ -206,7 +221,7 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 ![feature-card-example screenshot](documentation/feature-card-example.png)
 <br>
 
-## Account management
+#### Account management
 * The account management section is a call for action, the main focus is to make the user download the app and start their test account, that may be used as a sales lead. For this reason the main focus of this section is on the Heading call to join the service and the download buttons. That can be well seen on the mobile version:
  <br>
 
@@ -219,7 +234,7 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 ![account-management screenshot](documentation/account-management.png)
 <br>
 
-## Testimonials
+#### Testimonials
 * The focus of the home page is create engaging customer ready to purchase the product, so the next section after showing the app and how to download it is focused in bringing feedback of current customers. That is achieve with real testimonials of satisfied customers, that bring the use cases they had for the product.
 * The section is divided by cards, where each customer has it's own card with a picture, name and testimonial.
  <br>
@@ -233,15 +248,15 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 ![testimonial-scroll screenshot](documentation/testimonial-scroll.png)
 <br>
 
-## Hall of fame
+#### Hall of fame
 * This site is all about engaging and selling. So the last section specific to home page is focused to bring posts on social media from the community. Showing all the happiness on good pictures selected by the own user to post on their profiles. This can be reinforced with posting campaigns, sales leads and community behavior.
  <br>
 
 ![hall-of-fame screenshot](documentation/hall-of-fame.png)
 <br>
 
-# About
-## Hero journey
+### About
+#### Hero journey
 * This page is not very animated with effects, but that is intentional. This page is focused in storytelling, the user that came here is already half-convinced they want to be part of the community. So this is the first chapter of a book where the user will decide to keep reading or pass it ahead. So in order to keep to focus, the page is mostly static, with a great choice of words on each section of the page.
 * About us page starts with a hero image, this image is brand in a simple terms, the focus is mainly in socks, colorful and funny socks. An element of a box as central to the socks explosion stamps the whole brand in simple terms so anyone can understand it easily.
 * Different from home page, above the hero image there is an element in gradient using colors of the brand which makes it clear where the user is, calling out loud: About Us.
@@ -257,14 +272,14 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 > At Socks in a Box, we're passionate about more than just keeping your feet cozy. We're dedicated to bringing joy and style to your everyday life, one pair of socks at a time. Whether you're a sock enthusiast looking to expand your collection or someone simply in need of fresh, comfortable socks, we've got you covered.
 <br>
 
-## The hero story
+#### The hero story
 * The section entitled 'Our story' for the user, is a brief story of what was the motivation to start the business. Why the community matter so much for the brand, more about values (confort, convenience, quality...). Each word is there for a reason, revolutionize...
 > Our journey began with a simple idea: to revolutionize the way people think about socks. Tired of bland, boring options at local stores, we set out to create a subscription service that offered convenience, quality, and a touch of personality. Thus, Socks in a Box was born.
 <br>
 
 > Since our humble beginnings, we've grown into a thriving community of sock lovers who appreciate the convenience and excitement of receiving a curated selection of socks every month. With our commitment to exceptional customer service and top-notch products, we continue to redefine the sock-shopping experience for our members.
 
-## Why should I stay here?
+#### Why should I stay here?
 * At this section the focus is in selling the product, already preparing for the next section. The topics focus in confirming to the user why the hate going to shop boring socks, and that the alternative (Socks in a box) is so much better
 >Curated Selection: Each month, our team handpicks a unique assortment of socks from the best brands and designers around the world, ensuring you always receive top-quality products that reflect the latest trends and styles.
 <br>
@@ -280,15 +295,15 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 
 >Surprise and Delight: Part of the fun of being a member of Socks in a Box is the element of surprise. Each month, you'll receive a carefully curated selection of socks tailored to your preferences, ensuring that every unboxing is a delightful experience.
 
-## Call for action
+#### Call for action
 * After convincing now the user just needs a push, so this section focus on inviting the new user to the community. With download links right below this section on the deafult footer:
  <br>
 
 ![call-for-action screenshot](documentation/call-for-action.png)
 <br>
 
-# Shop
-## Hero image
+### Shop
+#### Hero image
 * The hero image is a setup, translating the simplicity of online shopping. Also bringing elements of the brand socks, boxes and the brand colors in a fun way.
 <br>
 
@@ -296,7 +311,7 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 <br>
 
 * Different from home page, above the hero image there is an element in gradient using colors of the brand which makes it clear where the user is, calling out loud: About Us.
-## Shop
+#### Shop
 * This page is straight to the point, the user that came here is ready to buy, so the only element on the page body is a section of the plans offered.
 * Each plan shows it's price and features.
 * The paid plans also bring a toggle element and an offer banner, pusing the user towards selecting Annual plan and get commited to the service for a longer period due to a discount on that option.
@@ -306,12 +321,28 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 ![shop screenshot](documentation/shop.png)
 <br>
 
-## Subscribe
+#### Subscribe
 * The subscribe buttons on the page will open a pop-up of a form, the focus of the page on the background is removed with a blur effect, keeping the focus on the form fields. This is a well used strategy in the industry, the focus on using it here is to help the new user in setting correct details to their account, reducing potencial account recovery contacts to the support.
 <br>
 
-![pop-up-subscribe screenshot](documentation/pop-up-subscribe.png)
+![subscribe-popup screenshot](documentation/subscribe-popup.png)
 <br>
+
+* All fields are required and responsive in case invalid data is inserted.
+* Once submitted, the form will redirect to purchased.html page.
+
+### Support
+#### Support hero
+
+#### FAQ
+
+#### Support form
+
+### Purchased
+
+### Thank you
+
+### 404
 
 ## Future features
 * Membership login backend to access and manage the account same way as the mockup app advertises.
