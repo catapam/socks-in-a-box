@@ -512,7 +512,12 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 | Header, menu animation and color feedback | Hoover above menu options and check the color change and animation | The current active page should be in Pink, while hoovering above other options marks the options in Cian blue, and shake the hoovered option vertically | Works as expected |
 | Header, menu fixed to top of screen | Scroll down on screen bigger than 576px | Menu should scroll with the page | Works as expected |
 | Body, hero image | Check image quality and file being used on all screen sizes | The image should be in good quality and vary the file based on screen size for better performance, the logo above the image should be centered on all screen sizes | Works as expected |
-| 
+| Body, feature cards animation | Hoover above on desktop or click on mobile | The cards should grow and have some Pink shadowing around, and when 3 columns are present the lateral cards should distort | Works as expected |
+| Body, feature cards column count | Change between screen size | The cards sizes are adjusting accordingly and changing between 1,2 or 3 columns | Works as expected |
+| Body, account management section | Change between screen size | The section should vary the flex direction between cloumn and row according to the screen room available | Works as expected |
+| Body, account management store buttons | Click  | They should open the iOS/Android home page stores on another tab | Works as expected |
+| Body, Testimonial section | Change between screen size | On mobile screens the section should add a functionality to scroll the testimonial vertically | Works as expected |
+| Body, Hall of fame section | Change between screen size | The images should spread according to the screen size, varying the number of columns | Works as expected |
 | Quick support button, animation | Keep an eye to the button on the very bottom-right corner of the screen | The button should pulse twice every few seconds | Works as expected |
 | Quick support button, form popup | Click the quick support button | The support form should open | Works as expected |
 | Support form, required fields and submittion | Fill the form and submit, test with an empty form | All required fields should alert if the data inserted is invalid and only allow submittion if it's all correct | Works as expected |
