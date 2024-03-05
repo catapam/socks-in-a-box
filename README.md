@@ -58,6 +58,13 @@ A site of a subscription club for fun socks delivered monthly. The idea is to de
     * [Purchased](#purchased-1)
     * [404](#404-1)
     * [Manual testing](#manual-testing)
+        * [Home page features testing](#home-page-features-testing)
+        * [About page features testing](#about-page-features-testing)
+        * [Shop page features testing](#shop-page-features-testing)
+        * [Support page features testing](#support-page-features-testing)
+        * [404 page features testing](#404-page-features-testing)
+        * [Thank you page features testing](#thank-you-page-features-testing)
+        * [Purchased page features testing](#purchased-page-features-testing)
     * [Accessibility](#accessibility)
     * [Future improvements](#future-improvements)
 * [Credits](#credits)
@@ -545,7 +552,15 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 | Header, menu animation and color feedback | Hoover above menu options and check the color change and animation | The current active page should be in Pink, while hoovering above other options marks the options in Cian blue, and shake the hoovered option vertically | Works as expected |
 | Header, menu fixed to top of screen | Scroll down on screen bigger than 576px | Menu should scroll with the page | Works as expected |
 | Body, hero image | Check image quality and file being used on all screen sizes, check the visibility of the Heading text above the image | The image should be in good quality and vary the file based on screen size for better performance, the heading should use a gradient as background and have round corners to the right side while aligned to the left | Works as expected |
-| 
+| Body, plan cards animation | Hoover | The cards should grow as they are hoovered above | Works as expected |
+| Body, plan cards size | Test different page size | The cards should always keep same size in realtion to each other and spread according to the room available | Works as expected |
+| Body, plan cards billing cycle toggling button | Switch between annual and monthly plans | The offer should only be visible on monthly setting and the pricing should update to Annual/Monthly according with the selection | Works as expected |
+| Body, plan cards offer raibow animation | Check the cards visually | The offer should be switching between brand colors, creating a raibow effect, the free plan should not show the offer at all | Works as expected |
+| Body, plan cards subscribe button animation | Hoover above the buttons | The buttons should shake vertically | Works as expected |
+| Body, plan cards subscribe button functionality | Click the buttons | The buttons should open a popup with an Account creation form | Works as expected |
+| Body, subscribe popup styling | Check stylings | The popup should be centered on the screen, present margins and the background should get blurred | Works as expected |
+| Body, subscribe popup form required fields and submittion | Fill the form and submit, test with an empty form | All required fields should alert if the data inserted is invalid and only allow submittion if it's all correct | Works as expected |
+| Body, subscribe popup form submittion | Submit the form | Redirect to purchased.html | Works as expected |
 | Quick support button, animation | Keep an eye to the button on the very bottom-right corner of the screen | The button should pulse twice every few seconds | Works as expected |
 | Quick support button, form popup | Click the quick support button | The support form should open | Works as expected |
 | Support form, required fields and submittion | Fill the form and submit, test with an empty form | All required fields should alert if the data inserted is invalid and only allow submittion if it's all correct | Works as expected |
@@ -565,7 +580,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 | Header, menu animation and color feedback | Hoover above menu options and check the color change and animation | The current active page should be in Pink, while hoovering above other options marks the options in Cian blue, and shake the hoovered option vertically | Works as expected |
 | Header, menu fixed to top of screen | Scroll down on screen bigger than 576px | Menu should scroll with the page | Works as expected |
 | Body, hero image | Check image quality and file being used on all screen sizes, check the visibility of the Heading text above the image | The image should be in good quality and vary the file based on screen size for better performance, the heading should use a gradient as background and have round corners to the right side while aligned to the left | Works as expected |
-| 
+| Body, Faq accordion | Click the questions | Only one question should be open at a time | Works as expected |
 | Support form, required fields and submittion | Fill the form and submit, test with an empty form | All required fields should alert if the data inserted is invalid and only allow submittion if it's all correct | Works as expected |
 | Support form, submittion | Submit the form | Redirect to thankyou.html | Works as expected |
 | Footer | Check alignments for both mobile and desktop versions | The flex should work as row for screens bigger than 576px and column for smaller | Works as expected |
