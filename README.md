@@ -23,19 +23,26 @@ A site of a subscription club for fun socks delivered monthly. The idea is to de
             * [Footer](#footer)
             * [Quick support button](#quick-support-button)
         * [Home page](#home-page)
+            * [Landing page](#landing-page)
+            * [Features section](#features-section)
+            * [Account management](#account-management)
+            * [Testimonials](#testimonials)
+            * [Hall of fame](#hall-of-fame)
+        * [About](#about-1)
     * [Future features](#future-features)
 * [Technology used](#technology-used)
     * [Language](#language)
     * [Frameworks, Libraries & Programs](#frameworks-libraries--programs)
 * [Deployment](#deployment)
 * [Testing](#testing)
-    * [Home](#home)
-    * [About](#about)
-    * [Shop](#shop)
-    * [Support](#support)
-    * [Thank you](#thank-you)
-    * [Purchased](#purchased)
-    * [404](#404)
+        * [Home](#home)
+        * [About](#about)
+        * [Shop](#shop)
+        * [Support](#support)
+        * [Thank you](#thank-you)
+        * [Purchased](#purchased)
+        * [404](#404)
+    * [Future improvements](#future-improvements)
 * [Credits](#credits)
     * [Code](#code)
     * [Content](#content)
@@ -159,9 +166,78 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 
 * When clicked the button opens a pop-up of the support form:
 <br>
+
 ![quick-support-popup screenshot](documentation/quick-support-popup.png)
 
 ### Home page
+## Landing page
+* The hero image shows a rain of colorfull fun socks with variations of the color scheme of the site, the rain drops over a city at night, bringing the feeling of a rainy-night confort.
+* At the center of the hero image there is an iception of the brand logo.
+<br>
+
+![landing-page screenshot](documentation/landing-page.png)
+<br>
+
+![landing-page-mobile screenshot](documentation/landing-page-mobile.png)
+
+## Features section
+* The features section brings 6 cards with the main features of the product.
+<br>
+
+![features screenshot](documentation/features.png)
+<br>
+
+* On mobile versions the features get reorganized to fit the width of the screen, varying between 1 or 2 columns depending on the room available
+ <br>
+
+![features-mobile screenshot](documentation/features-mobile.png)
+<br>
+
+![features-mobile-big screenshot](documentation/features-mobile-big.png)
+<br>
+
+* When hoovered over on desktop version or clicked on mobile versions, the card grows and shine in pink to gain some focus. If the screen has enough room for 3 columns, the lateral cards will incline and distort a little to bring some depth to the page. Check the top-right card on the example:
+ <br>
+
+![feature-card-example screenshot](documentation/feature-card-example.png)
+<br>
+
+## Account management
+* The account management section is a call for action, the main focus is to make the user download the app and start their test account, that may be used as a sales lead. For this reason the main focus of this section is on the Heading call to join the service and the download buttons. That can be well seen on the mobile version:
+ <br>
+
+![account-management-mobile screenshot](account-management-mobile.png)
+<br>
+
+* The full content of this section can be seen by scrolling down on mobile versions, but it's visible at first sight on desktop. The full content shows how the app layout is and gives some idea of what some sections of the app offer:
+ <br>
+
+![account-management screenshot](account-management.png)
+<br>
+
+## Testimonials
+* The focus of the home page is create engaging customer ready to purchase the product, so the next section after showing the app and how to download it is focused in bringing feedback of current customers. That is achieve with real testimonials of satisfied customers, that bring the use cases they had for the product.
+* The section is divided by cards, where each customer has it's own card with a picture, name and testimonial.
+ <br>
+
+![testimonials-example screenshot](testimonials-example.png)
+<br>
+
+* When viewed full screen the section will fit 8 testimonials at max divided in 2 rows of 4, but on mobile version all the fun is back at play with a scrollable section, adding some lightning at the very start and end of the screen to show clearly to the user that this section can be scrollable vertically with a simple touch of the screen. The lightning is a well used concept in the industry, with many popular apps and sites using it, so the behavior is familiar to most users.
+ <br>
+
+![testimonial-scroll screenshot](testimonial-scroll.png)
+<br>
+
+## Hall of fame
+* This site is all about engaging and selling. So the last section specific to home page is focused to bring posts on social media from the community. Showing all the happiness on good pictures selected by the own user to post on their profiles. This can be reinforced with posting campaigns, sales leads and community behavior.
+ <br>
+
+![hall-of-fame screenshot](hall-of-fame.png)
+<br>
+
+# About
+
 
 ## Future features
 * Membership login backend to access and manage the account same way as the mockup app advertises.
@@ -205,55 +281,60 @@ GitHub pages was used to deploy this site:
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the project to ensure there were no syntax errors in the project.
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en-US)
 
-## Home
+### Home
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Findex.html)
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/index.html)
 * Lighthouse result for mobile version:
 
 * Lighthouse result for desktop version:
 
-## About
+### About
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fabout.html)
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/about.html)
 * Lighthouse result for mobile version:
 
 * Lighthouse result for desktop version:
 
-## Shop
+### Shop
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fshop.html)
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/shop.html)
 * Lighthouse result for mobile version:
 
 * Lighthouse result for desktop version:
 
-## Support
+### Support
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fsupport.html) 
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/support.html)
 * Lighthouse result for mobile version:
 
 * Lighthouse result for desktop version:
 
-## Thank you
+### Thank you
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fthankyou.html) 
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/thankyou.html)
 * Lighthouse result for mobile version:
 
 * Lighthouse result for desktop version:
 
-## Purchased
+### Purchased
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fpurchased.html) 
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/purchased.html)
 * Lighthouse result for mobile version:
 
 * Lighthouse result for desktop version:
 
-## 404
+### 404
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2F404.html) 
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/404.html)
 * Lighthouse result for mobile version:
 
 * Lighthouse result for desktop version:
 
+## Future improvements
+* Work on the hero images to improve performance scores on all pages containing it. As the low score shown on test are all linked to LCP on those images:
+<br>
+
+![LCP example](documentation/LCP-example.png)
 
 # Credits
 ## Code
