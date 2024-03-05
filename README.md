@@ -339,10 +339,22 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 #### Support form
 
 ### Purchased
+* Custom Purchased page, calling the user to action of downloading the app, the page gets redirected to home page after 7s.
+<br>
+
+![Purchased custom page screenshot](documentation/purchased.png)
 
 ### Thank you
+* Custom thank you page shown after a support form submittion for better user experience, the page gets redirected to home page after 7s. The page sets the expected response time for the support contact.
+<br>
+
+![Thank you custom page screenshot](documentation/thankyou.png)
 
 ### 404
+* Custom 404 error page for better user experience, the page gets redirected to home page after 7s.
+<br>
+
+![404 custom page screenshot](documentation/404.png)
 
 ## Future features
 * Membership login backend to access and manage the account same way as the mockup app advertises.
