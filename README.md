@@ -460,11 +460,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 * Lighthouse result for mobile version:
 <br>
 
-![Purchase performance test mobile screenshot](documentation/purchase-mobile.png)
+![Purchased performance test mobile screenshot](documentation/purchased-mobile.png)
 * Lighthouse result for desktop version:
 <br>
 
-![Purchase performance test desktop screenshot](documentation/purchase-desktop.png)
+![Purchased performance test desktop screenshot](documentation/purchased-desktop.png)
 ### 404
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2F404.html) 
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/404.html)
