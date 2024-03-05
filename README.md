@@ -142,7 +142,21 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 * The site's logo was created on [Microsoft Copilot](https://copilot.microsoft.com/), and editted in Canva adding the text, and removing unwanted elements.
 
 ## Wireframes
---- Needed?
+<details><summary>Home</summary>
+<img src="documentation/home-wireframe.png.png">
+</details>
+<details><summary>About</summary>
+<img src="documentation/about-wireframe.png.png">
+</details>
+<details><summary>Shop</summary>
+<img src="documentation/shop-wireframe.png.png">
+</details>
+<details><summary>Support</summary>
+<img src="documentation/support-wireframe.png.png">
+</details>
+<details><summary>Other pages: 404, purchased and thankyou</summary>
+<img src="documentation/others-wireframe.png.png">
+</details>
 
 # Features
 ## Existing features
