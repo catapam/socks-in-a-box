@@ -402,51 +402,80 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Findex.html)
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/index.html)
 * Lighthouse result for mobile version:
+<br>
 
+![Home performance test mobile screenshot](documentation/home-mobile.png)
 * Lighthouse result for desktop version:
+<br>
 
+![Home performance test desktop screenshot](documentation/home-desktop.png)
 ### About
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fabout.html)
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/about.html)
 * Lighthouse result for mobile version:
+<br>
 
+![About performance test mobile screenshot](documentation/about-mobile.png)
 * Lighthouse result for desktop version:
+<br>
 
+![About performance test desktop screenshot](documentation/about-desktop.png)
 ### Shop
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fshop.html)
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/shop.html)
 * Lighthouse result for mobile version:
+<br>
 
+![Shop performance test mobile screenshot](documentation/shop-mobile.png)
 * Lighthouse result for desktop version:
+<br>
 
+![Shop performance test desktop screenshot](documentation/shop-desktop.png)
 ### Support
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fsupport.html) 
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/support.html)
 * Lighthouse result for mobile version:
+<br>
 
+![Support performance test mobile screenshot](documentation/support-mobile.png)
 * Lighthouse result for desktop version:
+<br>
 
+![Support performance test desktop screenshot](documentation/support-desktop.png)
 ### Thank you
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fthankyou.html) 
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/thankyou.html)
 * Lighthouse result for mobile version:
+<br>
 
+![Thank you performance test mobile screenshot](documentation/thankyou-mobile.png)
 * Lighthouse result for desktop version:
+<br>
+
+![Thank you performance test desktop screenshot](documentation/thankyou-desktop.png)
 
 ### Purchased
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2Fpurchased.html) 
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/purchased.html)
 * Lighthouse result for mobile version:
+<br>
 
+![Purchase performance test mobile screenshot](documentation/purchase-mobile.png)
 * Lighthouse result for desktop version:
+<br>
 
+![Purchase performance test desktop screenshot](documentation/purchase-desktop.png)
 ### 404
 * [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcatapam.github.io%2Fsocks-in-a-box%2F404.html) 
 * [Wave Accessiblity result](https://wave.webaim.org/report#/https://catapam.github.io/socks-in-a-box/404.html)
 * Lighthouse result for mobile version:
+<br>
 
+![404 performance test mobile screenshot](documentation/404-mobile.png)
 * Lighthouse result for desktop version:
+<br>
 
+![404 performance test desktop screenshot](documentation/404-desktop.png)
 ## Future improvements
 * Work on the hero images to improve performance scores on all pages containing it. As the low score shown on test are all linked to LCP on those images:
 <br>
