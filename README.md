@@ -57,6 +57,8 @@ A site of a subscription club for fun socks delivered monthly. The idea is to de
     * [Thank you](#thank-you-1)
     * [Purchased](#purchased-1)
     * [404](#404-1)
+    * [Manual testing](#manual-testing)
+    * [Accessibility](#accessibility)
     * [Future improvements](#future-improvements)
 * [Credits](#credits)
     * [Code](#code)
@@ -78,7 +80,7 @@ The top menu is alive and gives feedback to the user when hoovered and/or clicke
 The main content of home page also has some hover effects to bring the FUN sentiment set as main tone of the site, that same concept is brought to the Shop page, while About is more sober and focused in storytelling, and Support page focus in bringing the fun sentiment through colors and a easy going FAQ section.
 <br>
 <br>
-All hero images have 3 different sizes, and media queries swapt between them to offer a better performance on all devices.
+All hero images have 3 different sizes, and media queries swap between them to offer a better performance on all devices.
 <br>
 <br>
 A quick support button is always fixed at the bottom-right corner of all pages (except support page), so user don't need to navigate to support page if they need to contact the team quickly.
@@ -310,7 +312,7 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 ![shop-hero-image screenshot](documentation/shop-hero-image.png)
 <br>
 
-* Different from home page, above the hero image there is an element in gradient using colors of the brand which makes it clear where the user is, calling out loud: About Us.
+* Different from home page, above the hero image there is an element in gradient using colors of the brand which makes it clear where the user is, calling out loud:  Shop.
 #### Shop
 * This page is straight to the point, the user that came here is ready to buy, so the only element on the page body is a section of the plans offered.
 * Each plan shows it's price and features.
@@ -333,10 +335,24 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 
 ### Support
 #### Support hero
+* The hero image brings the brand elements of socks and boxes, using the brand colours and a support person at the center, trnaslating at first sight where the user actually is.
+<br>
+
+![Support hero image example screenshot](documentation/support-hero.png)
+
+* Different from home page, above the hero image there is an element in gradient using colors of the brand which makes it clear where the user is, calling out loud:  Support.
 
 #### FAQ
+* The frequently asked questions section brings a colorful accordion tree, where the user navigates between questions by clicking on the question element. All answers start as hidden, and as the user clicks them, they open one-by-one. For a better experience, only one answer is open at a time, so clicking another question will automatically close any previous one opened.
+<br>
+
+![FAQ screenshot](documentation/faq.png)
 
 #### Support form
+* Once the FAQ questions finish, there is a call for action and a support form. All fields on the form are required, and will give feedback if filled with invalid format. Once submitted, the form redirects to thankyou.html page.
+<br>
+
+![Support form screenshot](documentation/support-form.png)
 
 ### Purchased
 * Custom Purchased page, calling the user to action of downloading the app, the page gets redirected to home page after 7s.
@@ -364,7 +380,7 @@ Accessing non-existent pages will throw a custom 404 error page which allows nav
 ## Language
 * HTML
 * CSS
-* JavaScript, minimal usage
+* JavaScript, minimal usage on auto redirecting feature of pages 404, purchased and thankyou
 
 ## Frameworks, Libraries & Programs
 * [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes to plan out the website.
@@ -476,6 +492,173 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 <br>
 
 ![404 performance test desktop screenshot](documentation/404-desktop.png)
+
+## Manual testing
+* Manual testing of each feature of the site was made on Chrome.
+
+### Home page features testing
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Header, logo animation | Hoover above the logo, or click if using a mobile device bigger than 576px | The logo should shake/jump vertically | Works as expected |
+| Header, brand name animation | Hoover above the brand name | The brand name should grow | Works as expected |
+| Header, brand name click | Click the brand name | The brand name should redirect to home page top of the screen | Works as expected |
+| Header, menu animation and color feedback | Hoover above menu options and check the color change and animation | The current active page should be in Pink, while hoovering above other options marks the options in Cian blue, and shake the hoovered option vertically | Works as expected |
+| Header, menu fixed to top of screen | Scroll down on screen bigger than 576px | Menu should scroll with the page | Works as expected |
+| Body, hero image | Check image quality and file being used on all screen sizes | The image should be in good quality and vary the file based on screen size for better performance, the logo above the image should be centered on all screen sizes | Works as expected |
+| 
+| Quick support button, animation | Keep an eye to the button on the very bottom-right corner of the screen | The button should pulse twice every few seconds | Works as expected |
+| Quick support button, form popup | Click the quick support button | The support form should open | Works as expected |
+| Support form, required fields and submittion | Fill the form and submit, test with an empty form | All required fields should alert if the data inserted is invalid and only allow submittion if it's all correct | Works as expected |
+| Support form, submittion | Submit the form | Redirect to thankyou.html | Works as expected |
+| Footer | Check alignments for both mobile and desktop versions | The flex should work as row for screens bigger than 576px and column for smaller | Works as expected |
+| Footer, download buttons | Click  | They should open the iOS/Android home page stores on another tab | Works as expected |
+| Footer, social media buttons | Click  | They should open the Social medias home page on another tab | Works as expected |
+| Footer, Copyright link | Click | It should open my Linkedin profile on another tab | Works as expected |
+| Footer, mobile menu | Check color feedback and location | It should be always stick to the bottom of the screen if screen is smaller than 576px, and hidden if bigger. The menu should show the current active page in Pink | Works as expected |
+
+### About page features testing
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Header, logo animation | Hoover above the logo, or click if using a mobile device bigger than 576px | The logo should shake/jump vertically | Works as expected |
+| Header, brand name animation | Hoover above the brand name | The brand name should grow | Works as expected |
+| Header, brand name click | Click the brand name | The brand name should redirect to home page top of the screen | Works as expected |
+| Header, menu animation and color feedback | Hoover above menu options and check the color change and animation | The current active page should be in Pink, while hoovering above other options marks the options in Cian blue, and shake the hoovered option vertically | Works as expected |
+| Header, menu fixed to top of screen | Scroll down on screen bigger than 576px | Menu should scroll with the page | Works as expected |
+| Body, hero image | Check image quality and file being used on all screen sizes, check the visibility of the Heading text above the image | The image should be in good quality and vary the file based on screen size for better performance, the heading should use a gradient as background and have round corners to the right side while aligned to the left | Works as expected |
+| Body, text alignments and colors | Check if headings are the correct size and color, spacing between sections | The page should be easy to ready on all devices | Works as expected |
+| Quick support button, animation | Keep an eye to the button on the very bottom-right corner of the screen | The button should pulse twice every few seconds | Works as expected |
+| Quick support button, form popup | Click the quick support button | The support form should open | Works as expected |
+| Support form, required fields and submittion | Fill the form and submit, test with an empty form | All required fields should alert if the data inserted is invalid and only allow submittion if it's all correct | Works as expected |
+| Support form, submittion | Submit the form | Redirect to thankyou.html | Works as expected |
+| Footer | Check alignments for both mobile and desktop versions | The flex should work as row for screens bigger than 576px and column for smaller | Works as expected |
+| Footer, download buttons | Click  | They should open the iOS/Android home page stores on another tab | Works as expected |
+| Footer, social media buttons | Click  | They should open the Social medias home page on another tab | Works as expected |
+| Footer, Copyright link | Click | It should open my Linkedin profile on another tab | Works as expected |
+| Footer, mobile menu | Check color feedback and location | It should be always stick to the bottom of the screen if screen is smaller than 576px, and hidden if bigger. The menu should show the current active page in Pink | Works as expected |
+
+### Shop page features testing
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Header, logo animation | Hoover above the logo, or click if using a mobile device bigger than 576px | The logo should shake/jump vertically | Works as expected |
+| Header, brand name animation | Hoover above the brand name | The brand name should grow | Works as expected |
+| Header, brand name click | Click the brand name | The brand name should redirect to home page top of the screen | Works as expected |
+| Header, menu animation and color feedback | Hoover above menu options and check the color change and animation | The current active page should be in Pink, while hoovering above other options marks the options in Cian blue, and shake the hoovered option vertically | Works as expected |
+| Header, menu fixed to top of screen | Scroll down on screen bigger than 576px | Menu should scroll with the page | Works as expected |
+| Body, hero image | Check image quality and file being used on all screen sizes, check the visibility of the Heading text above the image | The image should be in good quality and vary the file based on screen size for better performance, the heading should use a gradient as background and have round corners to the right side while aligned to the left | Works as expected |
+| 
+| Quick support button, animation | Keep an eye to the button on the very bottom-right corner of the screen | The button should pulse twice every few seconds | Works as expected |
+| Quick support button, form popup | Click the quick support button | The support form should open | Works as expected |
+| Support form, required fields and submittion | Fill the form and submit, test with an empty form | All required fields should alert if the data inserted is invalid and only allow submittion if it's all correct | Works as expected |
+| Support form, submittion | Submit the form | Redirect to thankyou.html | Works as expected |
+| Footer | Check alignments for both mobile and desktop versions | The flex should work as row for screens bigger than 576px and column for smaller | Works as expected |
+| Footer, download buttons | Click  | They should open the iOS/Android home page stores on another tab | Works as expected |
+| Footer, social media buttons | Click  | They should open the Social medias home page on another tab | Works as expected |
+| Footer, Copyright link | Click | It should open my Linkedin profile on another tab | Works as expected |
+| Footer, mobile menu | Check color feedback and location | It should be always stick to the bottom of the screen if screen is smaller than 576px, and hidden if bigger. The menu should show the current active page in Pink | Works as expected |
+
+### Support page features testing
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Header, logo animation | Hoover above the logo, or click if using a mobile device bigger than 576px | The logo should shake/jump vertically | Works as expected |
+| Header, brand name animation | Hoover above the brand name | The brand name should grow | Works as expected |
+| Header, brand name click | Click the brand name | The brand name should redirect to home page top of the screen | Works as expected |
+| Header, menu animation and color feedback | Hoover above menu options and check the color change and animation | The current active page should be in Pink, while hoovering above other options marks the options in Cian blue, and shake the hoovered option vertically | Works as expected |
+| Header, menu fixed to top of screen | Scroll down on screen bigger than 576px | Menu should scroll with the page | Works as expected |
+| Body, hero image | Check image quality and file being used on all screen sizes, check the visibility of the Heading text above the image | The image should be in good quality and vary the file based on screen size for better performance, the heading should use a gradient as background and have round corners to the right side while aligned to the left | Works as expected |
+| 
+| Support form, required fields and submittion | Fill the form and submit, test with an empty form | All required fields should alert if the data inserted is invalid and only allow submittion if it's all correct | Works as expected |
+| Support form, submittion | Submit the form | Redirect to thankyou.html | Works as expected |
+| Footer | Check alignments for both mobile and desktop versions | The flex should work as row for screens bigger than 576px and column for smaller | Works as expected |
+| Footer, download buttons | Click  | They should open the iOS/Android home page stores on another tab | Works as expected |
+| Footer, social media buttons | Click  | They should open the Social medias home page on another tab | Works as expected |
+| Footer, Copyright link | Click | It should open my Linkedin profile on another tab | Works as expected |
+| Footer, mobile menu | Check color feedback and location | It should be always stick to the bottom of the screen if screen is smaller than 576px, and hidden if bigger. The menu should show the current active page in Pink | Works as expected |
+
+### 404 page features testing
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Header, logo animation | Hoover above the logo, or click if using a mobile device bigger than 576px | The logo should shake/jump vertically | Works as expected |
+| Header, brand name animation | Hoover above the brand name | The brand name should grow | Works as expected |
+| Header, brand name click | Click the brand name | The brand name should redirect to home page top of the screen | Works as expected |
+| Header, menu animation and color feedback | Hoover above menu options and check the color change and animation | The current active page should be in Pink, while hoovering above other options marks the options in Cian blue, and shake the hoovered option vertically | Works as expected |
+| Header, menu fixed to top of screen | Scroll down on screen bigger than 576px | Menu should scroll with the page | Works as expected |
+| Body, 404 error message | Open the page | Check if error is centered correctly, and using Pink for the error code | Works as expected |
+| Redirect after 7s | Check if page redirects after 7s | It should redirect to home page top of the page | Works as expected |
+| Quick support button, animation | Keep an eye to the button on the very bottom-right corner of the screen | The button should pulse twice every few seconds | Works as expected |
+| Quick support button, form popup | Click the quick support button | The support form should open | Works as expected |
+| Support form, required fields and submittion | Fill the form and submit, test with an empty form | All required fields should alert if the data inserted is invalid and only allow submittion if it's all correct | Works as expected |
+| Support form, submittion | Submit the form | Redirect to thankyou.html | Works as expected |
+| Footer | Check alignments for both mobile and desktop versions | The flex should work as row for screens bigger than 576px and column for smaller | Works as expected |
+| Footer, download buttons | Click  | They should open the iOS/Android home page stores on another tab | Works as expected |
+| Footer, social media buttons | Click  | They should open the Social medias home page on another tab | Works as expected |
+| Footer, Copyright link | Click | It should open my Linkedin profile on another tab | Works as expected |
+| Footer, mobile menu | Check color feedback and location | It should be always stick to the bottom of the screen if screen is smaller than 576px, and hidden if bigger. The menu should show the current active page in Pink | Works as expected |
+
+### Thank you page features testing
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Header, logo animation | Hoover above the logo, or click if using a mobile device bigger than 576px | The logo should shake/jump vertically | Works as expected |
+| Header, brand name animation | Hoover above the brand name | The brand name should grow | Works as expected |
+| Header, brand name click | Click the brand name | The brand name should redirect to home page top of the screen | Works as expected |
+| Header, menu animation and color feedback | Hoover above menu options and check the color change and animation | The current active page should be in Pink, while hoovering above other options marks the options in Cian blue, and shake the hoovered option vertically | Works as expected |
+| Header, menu fixed to top of screen | Scroll down on screen bigger than 576px | Menu should scroll with the page | Works as expected |
+| Body, Thank you message | Open the page | Check if error is centered correctly, and using Cian for the error code | Works as expected |
+| Redirect after 7s | Check if page redirects after 7s | It should redirect to home page top of the page | Works as expected |
+| Quick support button, animation | Keep an eye to the button on the very bottom-right corner of the screen | The button should pulse twice every few seconds | Works as expected |
+| Quick support button, form popup | Click the quick support button | The support form should open | Works as expected |
+| Support form, required fields and submittion | Fill the form and submit, test with an empty form | All required fields should alert if the data inserted is invalid and only allow submittion if it's all correct | Works as expected |
+| Support form, submittion | Submit the form | Redirect to thankyou.html | Works as expected |
+| Footer | Check alignments for both mobile and desktop versions | The flex should work as row for screens bigger than 576px and column for smaller | Works as expected |
+| Footer, download buttons | Click  | They should open the iOS/Android home page stores on another tab | Works as expected |
+| Footer, social media buttons | Click  | They should open the Social medias home page on another tab | Works as expected |
+| Footer, Copyright link | Click | It should open my Linkedin profile on another tab | Works as expected |
+| Footer, mobile menu | Check color feedback and location | It should be always stick to the bottom of the screen if screen is smaller than 576px, and hidden if bigger. The menu should show the current active page in Pink | Works as expected |
+
+### Purchased page features testing
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Header, logo animation | Hoover above the logo, or click if using a mobile device bigger than 576px | The logo should shake/jump vertically | Works as expected |
+| Header, brand name animation | Hoover above the brand name | The brand name should grow | Works as expected |
+| Header, brand name click | Click the brand name | The brand name should redirect to home page top of the screen | Works as expected |
+| Header, menu animation and color feedback | Hoover above menu options and check the color change and animation | The current active page should be in Pink, while hoovering above other options marks the options in Cian blue, and shake the hoovered option vertically | Works as expected |
+| Header, menu fixed to top of screen | Scroll down on screen bigger than 576px | Menu should scroll with the page | Works as expected |
+| Body, Welcome message | Open the page | Check if error is centered correctly, and using Cian for the error code | Works as expected |
+| Redirect after 7s | Check if page redirects after 7s | It should redirect to home page top of the page | Works as expected |
+| Quick support button, animation | Keep an eye to the button on the very bottom-right corner of the screen | The button should pulse twice every few seconds | Works as expected |
+| Quick support button, form popup | Click the quick support button | The support form should open | Works as expected |
+| Support form, required fields and submittion | Fill the form and submit, test with an empty form | All required fields should alert if the data inserted is invalid and only allow submittion if it's all correct | Works as expected |
+| Support form, submittion | Submit the form | Redirect to thankyou.html | Works as expected |
+| Footer | Check alignments for both mobile and desktop versions | The flex should work as row for screens bigger than 576px and column for smaller | Works as expected |
+| Footer, download buttons | Click  | They should open the iOS/Android home page stores on another tab | Works as expected |
+| Footer, social media buttons | Click  | They should open the Social medias home page on another tab | Works as expected |
+| Footer, Copyright link | Click | It should open my Linkedin profile on another tab | Works as expected |
+| Footer, mobile menu | Check color feedback and location | It should be always stick to the bottom of the screen if screen is smaller than 576px, and hidden if bigger. The menu should show the current active page in Pink | Works as expected |
+
+## Accessibility
+
+[Wave Accessibility](https://wave.webaim.org/) tool was used throughout development and for final testing of the deployed website to check for any aid accessibility testing.
+
+Testing was focused to ensure the following criteria were met:
+
+- All forms have associated labels or aria-labels so that this is read out on a screen reader to users who tab to form inputs
+- Color contrasts meet a minimum ratio as specified in [WCAG 2.1 Contrast Guidelines](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
+- Heading levels are not missed or skipped to ensure the importance of content is relayed correctly to the end user
+- All content is contained within landmarks to ensure ease of use for assistive technology, allowing the user to navigate by page regions
+- All not textual content had alternative text or titles so descriptions are read out to screen readers
+- HTML page lang attribute has been set
+- Aria properties have been implemented correctly
+- WCAG 2.1 Coding best practices being followed
+
+Manual tests were also performed to ensure the website was accessible as possible and an accessibility issue was identified.
+
+Issue #1: Use of hidden checkboxes and labels for the shop page cards and accordion on the support page;
+
+Fix #1: Updated the checkboxes to radio boxes. The new test shows an alert to set the radio box elements inside a fieldset, that was possible on the support accordion feature. But on the Shop page, a fieldset would break the Subscribe buttons on opening the popup form. The shop page buttons are built to have the radio buttons on the same level as the popup div, that way the toggling can be set via css to the parent element. This can be checked on style.css:723. That alert is being left behind as solution would include Javascript, which is not the focus of the project.
+
+Issue #2: Use of duplicate href on home button and brand name of all pages;
+
+Fix #2: No fix was found to work well, tested having different paths on both buttons but that caused other issues. It's only an alert on Wave and this is a common industry practice, so the alert is being left as it is.
+
 ## Future improvements
 * Work on the hero images to improve performance scores on all pages containing it. As the low score shown on test are all linked to LCP on those images:
 <br>
